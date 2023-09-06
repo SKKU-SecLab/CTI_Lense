@@ -31,5 +31,18 @@ Download the STIX dataset from the URL link above and unzip file to each folder 
 
 ## How to run
 ### Collecting STIX data and storing data to MondoDB
-You can collect the dataset by executing the `.py` code in `CTICollecter` folder
+We recommend you to download the STIX dataset from the drive URL link, however, you can collect the dataset by executing the `.py` code in `CTICollecter` folder and save the dataset to the database by executing the ` SaveData_from_File.py`. The sample execution command is as follows.
+```
+usage: TAXIIv1.py [-h] -s STIME -e ETIME -o OPATH
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -s STIME    Start datetime for collecting the STIX data (e.g., 2022-01-01)
+  -e ETIME    End datetime for collecting the STIX data (e.g., 2023-01-01)
+  -o OPATH    Output directory for STIX data
+
+(venv3) python Collection/TAXIIv1.py -s 2023-01-01 -e 2023-01-03 -o data/STIX1
+(venv3) python SaveData_from_File.py -ov1 data/STIX1/
+```
+### 
 
