@@ -1,0 +1,154 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:URIObj="http://cybox.mitre.org/objects#URIObject-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-25024bf0-0c97-44b4-bb63-33e4e38a7d39" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - harugasumi - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: phishing</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/harugasumi/status/1598129954885341184, https://twitter.com/harugasumi/status/1598134831044382720, https://twitter.com/harugasumi/status/1598138811556380672, https://twitter.com/harugasumi/status/1598167459734773760, https://twitter.com/harugasumi/status/1598169465707196416, https://twitter.com/harugasumi/status/1598171269022699521, https://twitter.com/harugasumi/status/1598173094710939648, https://twitter.com/harugasumi/status/1598174833421955072, https://twitter.com/harugasumi/status/1598248971805171713, https://twitter.com/harugasumi/status/1598256954316840961</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-020b7ecc-9376-f5ba-2713-94431385741b" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://rebrand.ly/j54mlxi from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-020b7ecc-9376-f5ba-2713-94431385741b">
+                <cybox:Title>URL - https://rebrand.ly/j54mlxi</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-f28e95d3-fdb5-4d72-b5b1-a11dd3ec93ef">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://rebrand.ly/j54mlxi</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-a149deab-a117-1509-b956-ce77308b34c3" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://bio-autrechose.com/jp from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-a149deab-a117-1509-b956-ce77308b34c3">
+                <cybox:Title>URL - https://bio-autrechose.com/jp</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-33e5d32a-93f4-45f6-88e9-9b89b28c44f2">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://bio-autrechose.com/jp</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-36950d14-48f6-8ff6-a4c4-fd7ba68b5a77" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://www.coaching-moderation.com/jp from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-36950d14-48f6-8ff6-a4c4-fd7ba68b5a77">
+                <cybox:Title>URL - https://www.coaching-moderation.com/jp</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-55977780-12c2-454c-9552-40706d56162b">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://www.coaching-moderation.com/jp</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b236d704-d1a2-05c2-ec4d-e10f16fe1a9b" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://mypage-amex.nakazawa-jidosha.com/ from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b236d704-d1a2-05c2-ec4d-e10f16fe1a9b">
+                <cybox:Title>URL - https://mypage-amex.nakazawa-jidosha.com/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-12b876af-081f-44a2-95f1-f0811195ed14">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://mypage-amex.nakazawa-jidosha.com/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-88d42739-dcf6-1f3f-3392-200ad7dfcf52" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>http://www.amazcon-co-jp.amacszan.xyglct.top/ from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-88d42739-dcf6-1f3f-3392-200ad7dfcf52">
+                <cybox:Title>URL - http://www.amazcon-co-jp.amacszan.xyglct.top/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-2fb8cae9-1fbd-4e95-9fea-bcc32e18ccf0">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>http://www.amazcon-co-jp.amacszan.xyglct.top/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-4386ce1a-1603-fe48-25f2-7db7fc2582b9" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://amazom.ur2efdx.cn/ from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-4386ce1a-1603-fe48-25f2-7db7fc2582b9">
+                <cybox:Title>URL - https://amazom.ur2efdx.cn/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-8f34397d-7ef1-462d-b74c-348c2b878f22">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://amazom.ur2efdx.cn/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-2ec77d23-5506-4da0-e3de-0c75e83da21f" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://amazon.toyouka1.club/ from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-2ec77d23-5506-4da0-e3de-0c75e83da21f">
+                <cybox:Title>URL - https://amazon.toyouka1.club/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-43f81893-4cb5-4272-8d90-ed9071086ad3">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://amazon.toyouka1.club/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-e8c4bdd5-dfe2-17b3-81aa-37064ae95e10" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>http://amzaon.cardvipsu.net/ from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-e8c4bdd5-dfe2-17b3-81aa-37064ae95e10">
+                <cybox:Title>URL - http://amzaon.cardvipsu.net/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-bb0a578d-2fe1-4dc1-a5b5-fdac3900fd79">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>http://amzaon.cardvipsu.net/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-917160c5-7490-a590-8384-6df9bf899f29" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://www.metafiview.com/ from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-917160c5-7490-a590-8384-6df9bf899f29">
+                <cybox:Title>URL - https://www.metafiview.com/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-4eec17ae-3aa7-4a2f-8edb-ae9fb1b26899">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://www.metafiview.com/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-a4c416db-108f-4f4b-6f0d-1c0152a456a2" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://pricey.6xujianhua.cn/detect from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-a4c416db-108f-4f4b-6f0d-1c0152a456a2">
+                <cybox:Title>URL - https://pricey.6xujianhua.cn/detect</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-7063f0f5-03f0-4325-8f4c-61c72e7ffa70">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://pricey.6xujianhua.cn/detect</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-cf908d09-20d2-9ee0-4da9-2122e17f84d0" timestamp="2022-12-02T00:00:48" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://www.go-etc-jp-unmnd.4795.com.cn/jp from https://otx.alienvault.com/pulse/6389402fa7eb8f79e4620416</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-cf908d09-20d2-9ee0-4da9-2122e17f84d0">
+                <cybox:Title>URL - https://www.go-etc-jp-unmnd.4795.com.cn/jp</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-cee2fd20-719d-44ea-849f-f3b257e92f51">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://www.go-etc-jp-unmnd.4795.com.cn/jp</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-6dd0fc5d-912a-4115-a462-3a1551c7d3be" timestamp="2023-09-06T05:52:49.118048+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

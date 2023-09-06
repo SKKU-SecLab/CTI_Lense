@@ -1,0 +1,164 @@
+<stix:STIX_Package xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-cdeaa32b-7726-426c-aa19-217bf8b0fac2" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Active Malware samples detected on 2023-01-01</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Description>Some active Malware samples detected on 2023-01-01.  For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</stix:Description>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: malware</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T23:57:06.359000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference/>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-8af3566e-0e09-4424-a24e-08a56cf3b484" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>4dde761681684d7edad4e5e1ffdb940b from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8af3566e-0e09-4424-a24e-08a56cf3b484">
+                <cybox:Title>FileHash-MD5 - 4dde761681684d7edad4e5e1ffdb940b</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-59ab8f12-6120-4556-be0a-01acbeb98d12">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>4dde761681684d7edad4e5e1ffdb940b</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d8acc94b-0803-eb8b-27e3-6be725f298f7" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>2327be693bc11a618c380d7d3abc2382d870d48b from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d8acc94b-0803-eb8b-27e3-6be725f298f7">
+                <cybox:Title>FileHash-SHA1 - 2327be693bc11a618c380d7d3abc2382d870d48b</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-033745d5-31c1-4a77-bb06-f8402d4ec9c4">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA1</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>2327be693bc11a618c380d7d3abc2382d870d48b</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-2114fc96-c1c8-1221-46c8-99197e3ebeb5" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>59ce0baba11893f90527fc951ac69912 from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-2114fc96-c1c8-1221-46c8-99197e3ebeb5">
+                <cybox:Title>FileHash-MD5 - 59ce0baba11893f90527fc951ac69912</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-a5995900-8903-4e7e-9918-af75b317e58b">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>59ce0baba11893f90527fc951ac69912</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-38c85475-6b82-52c2-9ff7-2cbb3e0a3420" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>5857a7dd621c4c3ebb0b5a3bec915d409f70d39f from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-38c85475-6b82-52c2-9ff7-2cbb3e0a3420">
+                <cybox:Title>FileHash-SHA1 - 5857a7dd621c4c3ebb0b5a3bec915d409f70d39f</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-202c38c9-63a3-4dd1-9e5e-af4b6f4b660d">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA1</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>5857a7dd621c4c3ebb0b5a3bec915d409f70d39f</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-1732ccdb-23a0-2e3b-dc97-f2cb1c0d4b0c" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>3849f30b51a5c49e8d1546960cc206c7 from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-1732ccdb-23a0-2e3b-dc97-f2cb1c0d4b0c">
+                <cybox:Title>FileHash-MD5 - 3849f30b51a5c49e8d1546960cc206c7</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-4e1e781e-6a86-46a4-ad7e-de023943d554">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>3849f30b51a5c49e8d1546960cc206c7</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-2e7e1f26-e825-096d-333d-96b1bf488110" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>61c74136534b826059c63221a2373dc0613a47b7 from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-2e7e1f26-e825-096d-333d-96b1bf488110">
+                <cybox:Title>FileHash-SHA1 - 61c74136534b826059c63221a2373dc0613a47b7</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-06413049-8b7b-4f7a-8eaf-fcbd8f5ecf98">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA1</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>61c74136534b826059c63221a2373dc0613a47b7</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-300876a7-4040-c3a2-cba6-168fcfaa5e36" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>eec5c6c219535fba3a0492ea8118b397 from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-300876a7-4040-c3a2-cba6-168fcfaa5e36">
+                <cybox:Title>FileHash-MD5 - eec5c6c219535fba3a0492ea8118b397</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-34f98435-0386-4805-8364-a01039417e91">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>eec5c6c219535fba3a0492ea8118b397</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-4af143aa-cc8c-5f3d-79d8-bfdcf1fa0acf" timestamp="2023-01-01T23:57:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>292559e94f1c04b7d0c65d4a01bbbc5dc1ff6f21 from https://otx.alienvault.com/pulse/63b21dd2f122bacd93dae20e</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-4af143aa-cc8c-5f3d-79d8-bfdcf1fa0acf">
+                <cybox:Title>FileHash-SHA1 - 292559e94f1c04b7d0c65d4a01bbbc5dc1ff6f21</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-cd2ee732-cb41-4406-8bc9-6c3856062775">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA1</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>292559e94f1c04b7d0c65d4a01bbbc5dc1ff6f21</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-d2b474ae-7eba-4b17-9899-584de2995d94" timestamp="2023-09-06T05:52:48.169351+00:00" xsi:type="incident:IncidentType">
+            <incident:Description>Some active Malware samples detected on 2023-01-01.  For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</incident:Description>
+        </stix:Incident>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

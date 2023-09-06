@@ -1,0 +1,176 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-fc252583-8228-4f4b-9c53-48eec906da24" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - DGAFeedAlerts - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: </simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/DGAFeedAlerts/status/1598121599479255040, https://twitter.com/DGAFeedAlerts/status/1598121604071964673, https://twitter.com/DGAFeedAlerts/status/1598121608975114243, https://twitter.com/DGAFeedAlerts/status/1598121613643456512, https://twitter.com/DGAFeedAlerts/status/1598122377291960320, https://twitter.com/DGAFeedAlerts/status/1598122381217857537, https://twitter.com/DGAFeedAlerts/status/1598122388511752193, https://twitter.com/DGAFeedAlerts/status/1598122392181739520, https://twitter.com/DGAFeedAlerts/status/1598122396061409283, https://twitter.com/DGAFeedAlerts/status/1598122657190486018, https://twitter.com/DGAFeedAlerts/status/1598122661309202432, https://twitter.com/DGAFeedAlerts/status/1598122665180553216, https://twitter.com/DGAFeedAlerts/status/1598316968058277891</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-0485ec1b-bd38-8ab1-5008-b4c54c05bc19" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>ccvtpoeupldidorkfwdw.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-0485ec1b-bd38-8ab1-5008-b4c54c05bc19">
+                <cybox:Title>domain - ccvtpoeupldidorkfwdw.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-06739fad-ee96-42d7-8f4d-d807cd761bc5">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>ccvtpoeupldidorkfwdw.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ce8012c2-26c5-b1a6-cb55-3fd40d7b636a" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>gjbjyfynihtfnpmi.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ce8012c2-26c5-b1a6-cb55-3fd40d7b636a">
+                <cybox:Title>domain - gjbjyfynihtfnpmi.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-feb1b20d-a286-45b5-b7d9-dbc69ec3d49f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>gjbjyfynihtfnpmi.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b88883a0-8793-a6dc-a65f-a8f53fdca439" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>mifxlympab.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b88883a0-8793-a6dc-a65f-a8f53fdca439">
+                <cybox:Title>domain - mifxlympab.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-95d5896f-6b6b-4007-92a7-7f88aa069945">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>mifxlympab.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-516eda8c-561d-9a2d-af7a-a2b127565a2a" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>wtlplyrqrbgp.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-516eda8c-561d-9a2d-af7a-a2b127565a2a">
+                <cybox:Title>domain - wtlplyrqrbgp.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-7bda08e1-2de7-47b2-a956-69dfd87d0729">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>wtlplyrqrbgp.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-44658439-d24e-298a-9212-3922f7c9b902" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>becauseadvance.net from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-44658439-d24e-298a-9212-3922f7c9b902">
+                <cybox:Title>domain - becauseadvance.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-a7b98d59-eb53-416a-9605-19acc107bc6a">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>becauseadvance.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d43d9562-7697-a6d8-21b2-8f46399140bc" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>englishbeing.net from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d43d9562-7697-a6d8-21b2-8f46399140bc">
+                <cybox:Title>domain - englishbeing.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-21db0c7c-731f-4459-b86c-a5ad073b7853">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>englishbeing.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-5323bf68-9f3a-fed0-ad84-1c6cce9c7863" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>fillcause.net from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-5323bf68-9f3a-fed0-ad84-1c6cce9c7863">
+                <cybox:Title>domain - fillcause.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-48d2cefc-4c8d-4d31-8668-4bf7fd2a9394">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>fillcause.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-aa942514-016c-76ad-c61a-d840ecacf790" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>nosegrain.net from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-aa942514-016c-76ad-c61a-d840ecacf790">
+                <cybox:Title>domain - nosegrain.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-3acdc2ba-9320-487b-8817-34702d6dbc44">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>nosegrain.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-c5805f15-68b6-1dfb-d6e0-90a035baa57e" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>toreshirt.net from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c5805f15-68b6-1dfb-d6e0-90a035baa57e">
+                <cybox:Title>domain - toreshirt.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-2fa60166-5f01-444a-b79a-17f14a19a151">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>toreshirt.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-05650fe6-74d8-6470-3ccd-2f7a7018bfc6" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>colarc.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-05650fe6-74d8-6470-3ccd-2f7a7018bfc6">
+                <cybox:Title>domain - colarc.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-b42fb662-03aa-413b-8d7b-98010b3ac0ba">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>colarc.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-2bd81f26-f67e-f25f-d98f-68e41b2ba673" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>hellla.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-2bd81f26-f67e-f25f-d98f-68e41b2ba673">
+                <cybox:Title>domain - hellla.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-8783f915-968d-4d20-a70d-b5c267a815fe">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>hellla.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d989cfd3-a1db-4bdb-27c2-4bfe9522cb81" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>okoona.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d989cfd3-a1db-4bdb-27c2-4bfe9522cb81">
+                <cybox:Title>domain - okoona.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-996279fe-ce38-44e7-b29f-4fce967b7053">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>okoona.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-79ebb5d1-6579-ec01-1427-ba4871acd582" timestamp="2022-12-02T00:00:47" xsi:type="indicator:IndicatorType">
+            <indicator:Title>icyamen.com from https://otx.alienvault.com/pulse/6389402ed29d23da3285e778</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-79ebb5d1-6579-ec01-1427-ba4871acd582">
+                <cybox:Title>domain - icyamen.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-d07e2707-2493-46f9-9c64-70fb34158a40">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>icyamen.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-75605fe3-ef95-453e-bd35-fb131347a81f" timestamp="2023-09-06T05:52:49.096977+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

@@ -1,0 +1,55 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-f6aae77e-2797-4aad-b97c-a9ad411f22e8" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - IronNetTR - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63894042a7eb8f79e4620417</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: Emotet</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/IronNetTR/status/1598406580654903296</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-ff9756b0-9645-2d3d-9c06-3b3f5a081b87" timestamp="2022-12-02T00:01:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>ns2.sjnettelecom.com.br from https://otx.alienvault.com/pulse/63894042a7eb8f79e4620417</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ff9756b0-9645-2d3d-9c06-3b3f5a081b87">
+                <cybox:Title>hostname - ns2.sjnettelecom.com.br</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-e02092f6-4933-4efa-973c-37245703fc32">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>ns2.sjnettelecom.com.br</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b1fb0343-e73a-a740-13d3-fc0d07d62435" timestamp="2022-12-02T00:01:07" xsi:type="indicator:IndicatorType">
+            <indicator:Title>cs.atksrv.net from https://otx.alienvault.com/pulse/63894042a7eb8f79e4620417</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b1fb0343-e73a-a740-13d3-fc0d07d62435">
+                <cybox:Title>hostname - cs.atksrv.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-a64f594b-0147-4223-aeb9-39b958d39c49">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>cs.atksrv.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-62931982-d02d-43b2-9b77-8c80e37ab069" timestamp="2023-09-06T05:52:49.983944+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

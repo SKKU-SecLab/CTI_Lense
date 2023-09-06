@@ -1,0 +1,65 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-36ae5401-06ce-46dc-ab90-31ab6a2b4891" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - ScumBots - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/6389402d2b7046166e936c9f</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: </simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/ScumBots/status/1598121549000851456, https://twitter.com/ScumBots/status/1598210368408543233</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-56f7e0d2-5938-d0a8-b7eb-d6eb249ec36d" timestamp="2022-12-02T00:00:46" xsi:type="indicator:IndicatorType">
+            <indicator:Title>ab9a4d30723683772c778b0433641695624616d7c96e09948e8beb3d58f48818 from https://otx.alienvault.com/pulse/6389402d2b7046166e936c9f</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-56f7e0d2-5938-d0a8-b7eb-d6eb249ec36d">
+                <cybox:Title>FileHash-SHA256 - ab9a4d30723683772c778b0433641695624616d7c96e09948e8beb3d58f48818</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-3a86297b-df6b-45c4-b1b7-e345b56dbaa6">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>ab9a4d30723683772c778b0433641695624616d7c96e09948e8beb3d58f48818</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-57fe9923-93fd-223a-4b42-db08d09a9817" timestamp="2022-12-02T00:00:46" xsi:type="indicator:IndicatorType">
+            <indicator:Title>eee29a4a94a23810cab689c09e4a83362278a344f3364ee371defcdd96c8e195 from https://otx.alienvault.com/pulse/6389402d2b7046166e936c9f</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-57fe9923-93fd-223a-4b42-db08d09a9817">
+                <cybox:Title>FileHash-SHA256 - eee29a4a94a23810cab689c09e4a83362278a344f3364ee371defcdd96c8e195</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-db7b2b92-6489-413c-b154-7d911a0740d3">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>eee29a4a94a23810cab689c09e4a83362278a344f3364ee371defcdd96c8e195</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-e96076c2-539d-4133-97cf-25f471d291b9" timestamp="2023-09-06T05:52:49.083807+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

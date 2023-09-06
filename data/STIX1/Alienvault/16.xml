@@ -1,0 +1,99 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:URIObj="http://cybox.mitre.org/objects#URIObject-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-6b546995-e69e-409a-9c7e-430c88c505a2" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - phishunt_io - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/6389403168a4dbdeb8a99237</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: phishing, scam</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/phishunt_io/status/1598134887327961090, https://twitter.com/phishunt_io/status/1598195598167085056, https://twitter.com/phishunt_io/status/1598256318271332355, https://twitter.com/phishunt_io/status/1598317254059368451, https://twitter.com/phishunt_io/status/1598378331887570986, https://twitter.com/phishunt_io/status/1598419348007563264, https://twitter.com/phishunt_io/status/1598439215666282496</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-565d9312-8069-0539-3469-88f34e59f739" timestamp="2022-12-02T00:00:50" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://0pensea.cn/ from https://otx.alienvault.com/pulse/6389403168a4dbdeb8a99237</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-565d9312-8069-0539-3469-88f34e59f739">
+                <cybox:Title>URL - https://0pensea.cn/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-c084b9dc-eec1-491a-b78e-e83e1a1df76b">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://0pensea.cn/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-255535fd-f897-4079-986d-ea78aaaf0f75" timestamp="2022-12-02T00:00:50" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://metamask.io.merge.transportesglobaltur.com/ from https://otx.alienvault.com/pulse/6389403168a4dbdeb8a99237</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-255535fd-f897-4079-986d-ea78aaaf0f75">
+                <cybox:Title>URL - https://metamask.io.merge.transportesglobaltur.com/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-f2ed83e2-1f44-4d59-bf6c-126341295983">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://metamask.io.merge.transportesglobaltur.com/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8ce2fe2c-71b7-c7b3-f2a5-9ba1d86eea28" timestamp="2022-12-02T00:00:50" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://paypalsecurefr.com/login/ from https://otx.alienvault.com/pulse/6389403168a4dbdeb8a99237</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8ce2fe2c-71b7-c7b3-f2a5-9ba1d86eea28">
+                <cybox:Title>URL - https://paypalsecurefr.com/login/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-3a21ad5e-6da1-4b93-99ab-0c578347034e">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://paypalsecurefr.com/login/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-3fb291f5-01ce-0b7e-13fe-00df007eac51" timestamp="2022-12-02T00:00:50" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://metamaskx.cc/ from https://otx.alienvault.com/pulse/6389403168a4dbdeb8a99237</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-3fb291f5-01ce-0b7e-13fe-00df007eac51">
+                <cybox:Title>URL - https://metamaskx.cc/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-b0afa1d7-4cc4-4dc8-bb01-cb714beae939">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://metamaskx.cc/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-af04c7bd-1e0c-8ac9-6d3a-579bf049ed8a" timestamp="2022-12-02T00:00:50" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://boredapeyachtclub.gwnfts.xyz from https://otx.alienvault.com/pulse/6389403168a4dbdeb8a99237</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-af04c7bd-1e0c-8ac9-6d3a-579bf049ed8a">
+                <cybox:Title>URL - https://boredapeyachtclub.gwnfts.xyz</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-0b3934f0-f7cf-4d50-bcf5-ebf66908bbb4">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://boredapeyachtclub.gwnfts.xyz</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-eca688a3-b3d9-38b1-de17-71bbaa50f9b1" timestamp="2022-12-02T00:00:50" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://metamask.io.merge.dysistemas.com/ from https://otx.alienvault.com/pulse/6389403168a4dbdeb8a99237</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-eca688a3-b3d9-38b1-de17-71bbaa50f9b1">
+                <cybox:Title>URL - https://metamask.io.merge.dysistemas.com/</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-82cb69c1-19f8-414e-85b5-10765e70eff1">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://metamask.io.merge.dysistemas.com/</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-34856114-f777-41da-ac45-dd933f7fff78" timestamp="2023-09-06T05:52:49.139741+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

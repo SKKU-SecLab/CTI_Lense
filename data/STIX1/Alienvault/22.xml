@@ -1,0 +1,66 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-4344499e-6f4c-4f42-a271-0612de45bbdd" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - mojoesec - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63894042ea319c4cdb74d14d</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: CobaltStrike</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/mojoesec/status/1598378610825609216</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-9d788fd9-32eb-503d-3deb-708e3d9834f6" timestamp="2022-12-02T00:01:06" xsi:type="indicator:IndicatorType">
+            <indicator:Title>paloaltokey.store from https://otx.alienvault.com/pulse/63894042ea319c4cdb74d14d</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-9d788fd9-32eb-503d-3deb-708e3d9834f6">
+                <cybox:Title>domain - paloaltokey.store</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-6cc8c63d-8b77-4c65-af4b-60cc6ad3c629">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>paloaltokey.store</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b2f6779c-9f8a-c66f-ff28-9c9e1f040d17" timestamp="2022-12-02T00:01:06" xsi:type="indicator:IndicatorType">
+            <indicator:Title>palalto.live from https://otx.alienvault.com/pulse/63894042ea319c4cdb74d14d</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b2f6779c-9f8a-c66f-ff28-9c9e1f040d17">
+                <cybox:Title>domain - palalto.live</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-691ea98e-2c24-4337-8738-f3dfa0ef2efd">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>palalto.live</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d1ae05a3-e4bf-b478-5534-89240008a809" timestamp="2022-12-02T00:01:06" xsi:type="indicator:IndicatorType">
+            <indicator:Title>altocloudzone.live from https://otx.alienvault.com/pulse/63894042ea319c4cdb74d14d</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d1ae05a3-e4bf-b478-5534-89240008a809">
+                <cybox:Title>domain - altocloudzone.live</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-6736b413-7655-4367-8d41-3150aa23c6b6">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>altocloudzone.live</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-b77672be-23e4-4e72-9afe-e62044bab2c9" timestamp="2023-09-06T05:52:49.977737+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

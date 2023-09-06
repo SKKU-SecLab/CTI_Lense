@@ -1,0 +1,355 @@
+<stix:STIX_Package xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-718bb9f3-32b4-4202-824a-e4dad6e15f87" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Active Bamital DGA(s) for 20230101</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Description>Some active Bamital domains generated via DGA for 20230101.  For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</stix:Description>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: Bamital, DGA</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T23:55:29.545000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference/>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-f48fc151-26ce-9975-c491-a326ac671838" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>0e78f3e2591843e5988e23afc591fd89.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-f48fc151-26ce-9975-c491-a326ac671838">
+                <cybox:Title>hostname - 0e78f3e2591843e5988e23afc591fd89.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-2f534cf6-48cb-4357-9f9b-41f9c3e3ba91">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>0e78f3e2591843e5988e23afc591fd89.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-31883dd9-cc40-3736-557d-2d9d811c5536" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>1817292ed0974e8efa83d6d57ac7a859.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-31883dd9-cc40-3736-557d-2d9d811c5536">
+                <cybox:Title>hostname - 1817292ed0974e8efa83d6d57ac7a859.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-52709977-ef74-4eb1-b8d8-83b79076c57f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>1817292ed0974e8efa83d6d57ac7a859.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-9b187f8f-f8ea-fb0d-0323-180c322f8d00" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>194cbba915b2dab2e65a3e4514e00d33.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-9b187f8f-f8ea-fb0d-0323-180c322f8d00">
+                <cybox:Title>hostname - 194cbba915b2dab2e65a3e4514e00d33.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-4628945c-626d-4762-95a4-db5c78768208">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>194cbba915b2dab2e65a3e4514e00d33.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6fd8516e-6959-a56d-40fe-6eca288ea627" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>23642f4cce7eb694ca79c8f5d134a510.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6fd8516e-6959-a56d-40fe-6eca288ea627">
+                <cybox:Title>hostname - 23642f4cce7eb694ca79c8f5d134a510.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-c893803a-c50b-4f71-a793-18b43cf791f3">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>23642f4cce7eb694ca79c8f5d134a510.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b1b6f305-2b13-af5e-1958-ca5e12f3dc16" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>2a18aa1123a62ddee6c45fb4965f46ac.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b1b6f305-2b13-af5e-1958-ca5e12f3dc16">
+                <cybox:Title>hostname - 2a18aa1123a62ddee6c45fb4965f46ac.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-a1b3e968-baa7-478b-bb7d-b5858c8b57b2">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>2a18aa1123a62ddee6c45fb4965f46ac.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-048089cd-1795-316f-6416-a26f994a062a" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>2c36e1be1691216d1f9ab22f4de50691.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-048089cd-1795-316f-6416-a26f994a062a">
+                <cybox:Title>hostname - 2c36e1be1691216d1f9ab22f4de50691.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-78e32d66-adf2-4900-ac7f-c05ef7d38938">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>2c36e1be1691216d1f9ab22f4de50691.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ff8b6f0d-4496-9dc9-9021-70bee13ec716" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>309c7f9710eb2eb0434c8a6a38f25307.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ff8b6f0d-4496-9dc9-9021-70bee13ec716">
+                <cybox:Title>hostname - 309c7f9710eb2eb0434c8a6a38f25307.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-8cb4dc54-2559-4e0e-892f-a460b11579c6">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>309c7f9710eb2eb0434c8a6a38f25307.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8a055dbe-7918-c73e-4a51-c29057127c85" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>48a1fe53a50b07c55c62b4659bc6e82c.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8a055dbe-7918-c73e-4a51-c29057127c85">
+                <cybox:Title>hostname - 48a1fe53a50b07c55c62b4659bc6e82c.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-cef206c0-5c16-4469-9490-04f7069a5780">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>48a1fe53a50b07c55c62b4659bc6e82c.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-7e1fa789-ef60-0513-3782-e253d030cd1b" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>4c16018f8d050235b497918784d753a6.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-7e1fa789-ef60-0513-3782-e253d030cd1b">
+                <cybox:Title>hostname - 4c16018f8d050235b497918784d753a6.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-098b1d2f-b259-444d-bc16-a8f1fa3e8d71">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>4c16018f8d050235b497918784d753a6.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b528080d-a807-b5f5-435d-660e46b33a9b" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>53115edb199c7b7e97adda24ff4db771.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b528080d-a807-b5f5-435d-660e46b33a9b">
+                <cybox:Title>hostname - 53115edb199c7b7e97adda24ff4db771.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-673a724f-17ab-496a-8e40-3d4c53626289">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>53115edb199c7b7e97adda24ff4db771.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-277abc03-943d-ccee-79ef-ecb3c0164fdc" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>573c738217ee3ab9e98af3a28aaa6e44.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-277abc03-943d-ccee-79ef-ecb3c0164fdc">
+                <cybox:Title>hostname - 573c738217ee3ab9e98af3a28aaa6e44.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-40643680-5b3c-4540-b2c9-cf3fd93da9db">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>573c738217ee3ab9e98af3a28aaa6e44.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-236bace1-0806-023e-b47e-b498deff073a" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>7800ede0ee772e2ff46a5946f22d4812.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-236bace1-0806-023e-b47e-b498deff073a">
+                <cybox:Title>hostname - 7800ede0ee772e2ff46a5946f22d4812.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-f0634d55-dd5e-4c82-ab51-9247f84196db">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>7800ede0ee772e2ff46a5946f22d4812.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-20662ab8-da50-b7b9-e696-9b7e85dca86a" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>8079d48fc7a0bf323a3c3e9c2d29933c.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-20662ab8-da50-b7b9-e696-9b7e85dca86a">
+                <cybox:Title>hostname - 8079d48fc7a0bf323a3c3e9c2d29933c.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-466064e6-c2c4-4f9f-88d8-210855e878cb">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>8079d48fc7a0bf323a3c3e9c2d29933c.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8e62b7e6-42f7-03ee-ca75-de6752769c8f" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>80dcfd8332240c0d1339bb3c1d1698db.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8e62b7e6-42f7-03ee-ca75-de6752769c8f">
+                <cybox:Title>hostname - 80dcfd8332240c0d1339bb3c1d1698db.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-3b280538-0bbb-46f5-ab5a-2b42674a59c3">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>80dcfd8332240c0d1339bb3c1d1698db.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8cbb2f6e-592e-00a4-c0fb-8f2cab9f8672" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>834eaa82375942dd0e2048a731f6b5fb.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8cbb2f6e-592e-00a4-c0fb-8f2cab9f8672">
+                <cybox:Title>hostname - 834eaa82375942dd0e2048a731f6b5fb.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-76c11aba-e8d5-4ff8-9005-4b578990c5a8">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>834eaa82375942dd0e2048a731f6b5fb.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ce2fc779-5b50-31b6-65db-0aeed90b7b1e" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>84b6be583b1ad29bf87a152b2aede628.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ce2fc779-5b50-31b6-65db-0aeed90b7b1e">
+                <cybox:Title>hostname - 84b6be583b1ad29bf87a152b2aede628.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-d9e03d3b-15d1-445b-b2ab-783dec41b08b">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>84b6be583b1ad29bf87a152b2aede628.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-f8d3bb64-dfbc-c467-59f6-f03f6e056e40" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>89c8c344f54cba1fb6bad2351b07e679.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-f8d3bb64-dfbc-c467-59f6-f03f6e056e40">
+                <cybox:Title>hostname - 89c8c344f54cba1fb6bad2351b07e679.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-72d8e41d-c558-466b-83d4-f203049347b9">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>89c8c344f54cba1fb6bad2351b07e679.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d3350c69-7441-2614-6c45-ac05ea1ebce5" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>9333a2239391833bc420b3c69c7e1195.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d3350c69-7441-2614-6c45-ac05ea1ebce5">
+                <cybox:Title>hostname - 9333a2239391833bc420b3c69c7e1195.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-47ffd1fd-310b-4010-816f-2602b0e7d9e7">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>9333a2239391833bc420b3c69c7e1195.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-185044ce-f960-6cef-bfe7-24d3c9444374" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>a40aa4347adc88645748216e3e39c09f.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-185044ce-f960-6cef-bfe7-24d3c9444374">
+                <cybox:Title>hostname - a40aa4347adc88645748216e3e39c09f.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-c54c61a6-e9f9-41f8-bd44-ee44deba4079">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>a40aa4347adc88645748216e3e39c09f.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-cf51170c-ab24-aeb8-bd14-eb54376ea29e" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>c6ae5ef9cb5bd9644cfd653374d56bba.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-cf51170c-ab24-aeb8-bd14-eb54376ea29e">
+                <cybox:Title>hostname - c6ae5ef9cb5bd9644cfd653374d56bba.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-19c5b09d-fa38-4618-8643-916dc27b03bc">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>c6ae5ef9cb5bd9644cfd653374d56bba.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d1eb0f64-f623-210a-9a95-b7e11115d9df" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>c8fbdd9d73901af97eee9375e1a5f850.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d1eb0f64-f623-210a-9a95-b7e11115d9df">
+                <cybox:Title>hostname - c8fbdd9d73901af97eee9375e1a5f850.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-241fc584-914e-4f3c-962a-d1776f27fd8c">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>c8fbdd9d73901af97eee9375e1a5f850.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b2a38282-d9a7-2462-de79-90e06f8368cb" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>ce5c5e6681d6a9f5c492ea5fc647098f.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b2a38282-d9a7-2462-de79-90e06f8368cb">
+                <cybox:Title>hostname - ce5c5e6681d6a9f5c492ea5fc647098f.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-26aa4c28-3403-4525-b37e-0d561f3486a0">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>ce5c5e6681d6a9f5c492ea5fc647098f.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-568df278-0df5-1a30-48af-20436c126f27" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>d63d8e875585d992bb332314a30125e3.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-568df278-0df5-1a30-48af-20436c126f27">
+                <cybox:Title>hostname - d63d8e875585d992bb332314a30125e3.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-e9e0c9b4-ba12-4b9c-a289-dd8db8b0a627">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>d63d8e875585d992bb332314a30125e3.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-f72d2615-ebb8-9610-e22d-0e937b2d14d2" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>dd2946b1721f217e183c81ff575a138a.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-f72d2615-ebb8-9610-e22d-0e937b2d14d2">
+                <cybox:Title>hostname - dd2946b1721f217e183c81ff575a138a.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-21753517-0720-4794-9479-cedebdea2295">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>dd2946b1721f217e183c81ff575a138a.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-59041b9d-948a-215f-8968-060e6ac1ee1e" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>e5d958b92ba62dfb7525cf6db5dfea94.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-59041b9d-948a-215f-8968-060e6ac1ee1e">
+                <cybox:Title>hostname - e5d958b92ba62dfb7525cf6db5dfea94.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-ae8300e8-5f45-4d86-86f4-6fc79e255911">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>e5d958b92ba62dfb7525cf6db5dfea94.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-f8ecf99c-87dd-a947-bd39-aa3f9df5731c" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>f232215c169c07aefdf3926561e78f81.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-f8ecf99c-87dd-a947-bd39-aa3f9df5731c">
+                <cybox:Title>hostname - f232215c169c07aefdf3926561e78f81.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-a769213d-5c88-4255-b069-ac62c20a8326">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>f232215c169c07aefdf3926561e78f81.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-fb729e1a-4259-da1e-5d65-dd53ca8086a8" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>f23351c5694b1352baf87e0f5ea55ca9.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-fb729e1a-4259-da1e-5d65-dd53ca8086a8">
+                <cybox:Title>hostname - f23351c5694b1352baf87e0f5ea55ca9.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-9e764614-ea7e-49a5-a126-7fffa7a24b95">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>f23351c5694b1352baf87e0f5ea55ca9.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-e9159e84-dcc9-b2e9-cf11-5539a676b6dc" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>f32014db2768655130b76aa4d0838247.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-e9159e84-dcc9-b2e9-cf11-5539a676b6dc">
+                <cybox:Title>hostname - f32014db2768655130b76aa4d0838247.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-b19f2109-cb99-45ca-8e54-7574c181f742">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>f32014db2768655130b76aa4d0838247.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-1629e528-892c-a1b1-bb90-3d51359882ae" timestamp="2023-01-01T23:55:30" xsi:type="indicator:IndicatorType">
+            <indicator:Title>f8b2d52a68f2353fccd8c9534132ea35.co.cc from https://otx.alienvault.com/pulse/63b21d71f928eaf624d14881</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-1629e528-892c-a1b1-bb90-3d51359882ae">
+                <cybox:Title>hostname - f8b2d52a68f2353fccd8c9534132ea35.co.cc</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-4431656a-2686-4988-ba3d-f7cb4030cc20">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>f8b2d52a68f2353fccd8c9534132ea35.co.cc</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-4a1089ac-599e-4fef-a833-05d76c048afa" timestamp="2023-09-06T05:52:48.100683+00:00" xsi:type="incident:IncidentType">
+            <incident:Description>Some active Bamital domains generated via DGA for 20230101.  For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</incident:Description>
+        </stix:Incident>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

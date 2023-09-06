@@ -1,0 +1,264 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-065b4d92-58fc-4738-a9f4-7678cae3a389" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - 500mk500 - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: </simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/500mk500/status/1598191373458747394, https://twitter.com/500mk500/status/1598371489694289923, https://twitter.com/500mk500/status/1598377783981445120</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-29583e65-6c90-6b89-a304-54ce1ae5fe74" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudfzj72.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-29583e65-6c90-6b89-a304-54ce1ae5fe74">
+                <cybox:Title>domain - kudfzj72.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-3ce7c74b-8d57-42f7-a466-043f9ee5bb78">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudfzj72.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8be819e9-d5a6-1ba4-5382-8d643520d366" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudlvw52.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8be819e9-d5a6-1ba4-5382-8d643520d366">
+                <cybox:Title>domain - kudlvw52.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-80714c00-f93f-48ca-bd6f-d22dc61cbf9d">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudlvw52.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-27faa729-ba8d-a5ec-20ba-42733449a5f3" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>tysxri32.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-27faa729-ba8d-a5ec-20ba-42733449a5f3">
+                <cybox:Title>domain - tysxri32.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-184b5687-464f-408b-9f29-9dcc53eb0587">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>tysxri32.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b301d686-0019-a6a8-9b76-d6283808ba1a" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudqyx62.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b301d686-0019-a6a8-9b76-d6283808ba1a">
+                <cybox:Title>domain - kudqyx62.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-289984c2-cb69-40e2-8a7c-e5705f07ceb4">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudqyx62.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ce53211e-8c2d-dddc-3386-fa3a72290372" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>tysycn22.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ce53211e-8c2d-dddc-3386-fa3a72290372">
+                <cybox:Title>domain - tysycn22.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-d29077e3-f070-46be-badd-3953fad1f736">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>tysycn22.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-44c7021e-5676-2963-f7b7-67d552dd095c" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>tysyds12.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-44c7021e-5676-2963-f7b7-67d552dd095c">
+                <cybox:Title>domain - tysyds12.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-2c515bee-276d-42ab-b9db-f7d13d20c884">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>tysyds12.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d5c482ee-f1b3-fe29-3232-4a1fe10d7b29" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>pabmab02.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d5c482ee-f1b3-fe29-3232-4a1fe10d7b29">
+                <cybox:Title>domain - pabmab02.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-68edb027-f208-4b5b-b6ae-59810e9a25fb">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>pabmab02.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-715de62d-492c-0e57-6eeb-7b47230bb76a" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudtop64.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-715de62d-492c-0e57-6eeb-7b47230bb76a">
+                <cybox:Title>domain - kudtop64.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-3f6cb2ec-e45f-41f2-881f-879a50bb7930">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudtop64.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8ae3470e-2794-aa48-bebe-3a0ff978ba00" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudcpt54.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8ae3470e-2794-aa48-bebe-3a0ff978ba00">
+                <cybox:Title>domain - kudcpt54.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-936d4838-baa1-49c5-91df-62890670f6c4">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudcpt54.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d70b340b-a810-1902-a787-a20873390e3c" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudhxs35.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d70b340b-a810-1902-a787-a20873390e3c">
+                <cybox:Title>domain - kudhxs35.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-7ec4e624-1972-4b6b-aad1-e771a4790cec">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudhxs35.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-56b78fda-943d-4071-ee8f-60b36c61078c" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudmgk41.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-56b78fda-943d-4071-ee8f-60b36c61078c">
+                <cybox:Title>domain - kudmgk41.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-ad106dbe-abce-42c4-a4e5-02fd72d5faf0">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudmgk41.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-32a30314-aca4-9924-fa0a-efd0565b1c5b" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudnrk65.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-32a30314-aca4-9924-fa0a-efd0565b1c5b">
+                <cybox:Title>domain - kudnrk65.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-bad8d2b0-cf63-4c57-b277-f7b66005f751">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudnrk65.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ebb92109-010e-796e-fb5b-adc791c928ca" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudyle55.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ebb92109-010e-796e-fb5b-adc791c928ca">
+                <cybox:Title>domain - kudyle55.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-faa8e9e9-22bc-47cc-aaf1-d8755650e8a6">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudyle55.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-675fe33b-ada3-1190-0b9d-cc4b4261f625" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudbcn31.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-675fe33b-ada3-1190-0b9d-cc4b4261f625">
+                <cybox:Title>domain - kudbcn31.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1ad02eab-aeb4-4641-a1a4-69891c307371">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudbcn31.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b6312cdf-aeed-2332-0ca9-cecc61bb1537" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudwfl74.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b6312cdf-aeed-2332-0ca9-cecc61bb1537">
+                <cybox:Title>domain - kudwfl74.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-4df8bb81-219d-4349-87bd-2e4236015646">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudwfl74.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-c8dd5af8-cde4-58a7-1572-3e13f84a8a02" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>tysozr11.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c8dd5af8-cde4-58a7-1572-3e13f84a8a02">
+                <cybox:Title>domain - tysozr11.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-f53029f4-100d-4d69-9238-253656a44cb8">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>tysozr11.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-62223c0b-52e5-e109-e153-1195bfd383e9" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>tyswmn15.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-62223c0b-52e5-e109-e153-1195bfd383e9">
+                <cybox:Title>domain - tyswmn15.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1426bdf3-1c5f-4b9c-8c6f-1c8f2cbd5e68">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>tyswmn15.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-26fd0121-d164-b0dc-368a-2a6bb2f1c881" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudken51.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-26fd0121-d164-b0dc-368a-2a6bb2f1c881">
+                <cybox:Title>domain - kudken51.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-6df1d23b-277f-4859-9d8d-1f074f1b5910">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudken51.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-f15c3339-f5bf-ab4f-a5d3-834a38399845" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudrot712.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-f15c3339-f5bf-ab4f-a5d3-834a38399845">
+                <cybox:Title>domain - kudrot712.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-62bc3f05-d952-4996-929c-78490bead0e5">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudrot712.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-36f29926-519d-6e74-c5b3-01e40b31d20a" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudgzv61.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-36f29926-519d-6e74-c5b3-01e40b31d20a">
+                <cybox:Title>domain - kudgzv61.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-79bfd39b-d6dc-4142-a38f-b48aaeb1682e">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudgzv61.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-0562b86f-2b8e-1940-d2bb-9c383d5bb6a0" timestamp="2022-12-02T00:00:57" xsi:type="indicator:IndicatorType">
+            <indicator:Title>kudxoq75.top from https://otx.alienvault.com/pulse/63894038a24dc6a4d34b3840</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-0562b86f-2b8e-1940-d2bb-9c383d5bb6a0">
+                <cybox:Title>domain - kudxoq75.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-2234d8a8-51ff-4b2b-a3c5-46f1225e701a">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>kudxoq75.top</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-3e9d740c-5124-4cf7-ad05-0db2e48449f0" timestamp="2023-09-06T05:52:49.953872+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

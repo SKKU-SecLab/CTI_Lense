@@ -1,0 +1,718 @@
+<stix:STIX_Package xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-6b45e512-300a-4e90-b854-ffe4d03edd1d" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Newly registered domain names related to the Covid-19 pandemic on 20221231</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Description>Our team compiled a list of these domain names from our Newly Registered Domains feed that can be used to protect your family, employees and customers. The list is based solely on the domain names' and registration timeframe, no other assumptions are made. The information is provided as-is, with no warranties. For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</stix:Description>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: covid-19</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T22:43:00.438000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference/>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-2706d3a8-223d-7b17-43ca-73ca74855806" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>abcbharat.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-2706d3a8-223d-7b17-43ca-73ca74855806">
+                <cybox:Title>domain - abcbharat.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-364d42ed-6ea9-4272-964c-b0fdba4a1fe7">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>abcbharat.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-812e62c8-d07c-e60e-91a2-780a86039763" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharatcode.org from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-812e62c8-d07c-e60e-91a2-780a86039763">
+                <cybox:Title>domain - bharatcode.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-c6169ed5-c437-4ab3-84ba-37c8442cea5f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharatcode.org</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-9831e056-e2a6-ce37-ef17-71f6e201dde8" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharatgurukuls.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-9831e056-e2a6-ce37-ef17-71f6e201dde8">
+                <cybox:Title>domain - bharatgurukuls.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-0e47e19e-88c3-46f4-9db6-771a93ed9381">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharatgurukuls.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-eab32a61-0ab2-8bb1-3c72-0f199184282c" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharathihomecare.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-eab32a61-0ab2-8bb1-3c72-0f199184282c">
+                <cybox:Title>domain - bharathihomecare.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-84d2adb8-1713-482b-9cf3-84934dac1d1c">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharathihomecare.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-200b8fab-d9fe-e0fc-a1fd-9031b57ebeff" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharati.app from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-200b8fab-d9fe-e0fc-a1fd-9031b57ebeff">
+                <cybox:Title>domain - bharati.app</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-0ecb89da-301a-4fa9-824a-7f12e81c9987">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharati.app</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-748995f2-36a3-6e3a-a367-646339a022bd" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharatinfotek.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-748995f2-36a3-6e3a-a367-646339a022bd">
+                <cybox:Title>domain - bharatinfotek.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-9a883c88-c695-4552-a1d1-f0d0b33c60d8">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharatinfotek.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-143109cf-5bc8-72af-8068-6d051243b188" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharatjeetoinaam.space from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-143109cf-5bc8-72af-8068-6d051243b188">
+                <cybox:Title>domain - bharatjeetoinaam.space</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-98bc587b-38dd-4db3-88ff-f3063700abbf">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharatjeetoinaam.space</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-61a73968-a4ef-bcd6-fe0b-c87f11a0f654" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharatlabrayya.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-61a73968-a4ef-bcd6-fe0b-c87f11a0f654">
+                <cybox:Title>domain - bharatlabrayya.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1595aa2b-af3b-461f-ae0f-ae17e64d87c5">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharatlabrayya.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-fcf8c262-6f74-f51b-9aec-52823bfd68fd" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharatnavnirmanfoundation.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-fcf8c262-6f74-f51b-9aec-52823bfd68fd">
+                <cybox:Title>domain - bharatnavnirmanfoundation.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-a90cb6dc-1fdb-4c1c-8c53-fc5bdfa3838f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharatnavnirmanfoundation.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-5724de5d-4bcb-9354-25b4-aad65f524f78" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharatsports.net from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-5724de5d-4bcb-9354-25b4-aad65f524f78">
+                <cybox:Title>domain - bharatsports.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1e355305-4432-4123-8d4c-d2dcbafdb516">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharatsports.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-313dee97-f346-b0a6-525e-1f60bdd408da" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharat-tcil-electronictender.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-313dee97-f346-b0a6-525e-1f60bdd408da">
+                <cybox:Title>domain - bharat-tcil-electronictender.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-a0915abb-3eef-48a7-9642-d2cefb6b4e08">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharat-tcil-electronictender.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-92bb2407-f87a-1688-9a45-32e0e5e90b59" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>bharat-tcilelectronictender.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-92bb2407-f87a-1688-9a45-32e0e5e90b59">
+                <cybox:Title>domain - bharat-tcilelectronictender.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-acd048a1-5e10-47fd-a763-5d3bfdb9f095">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>bharat-tcilelectronictender.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8d64c764-8b4f-ae20-3f8a-9175c4feebd3" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>calcovidgrandjury.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8d64c764-8b4f-ae20-3f8a-9175c4feebd3">
+                <cybox:Title>domain - calcovidgrandjury.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-359a9c9e-970e-4078-a5a7-d13300b6fbbb">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>calcovidgrandjury.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-7534cbfa-f508-f2ee-ec8d-2c214ce4de68" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>ceasecovid19.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-7534cbfa-f508-f2ee-ec8d-2c214ce4de68">
+                <cybox:Title>domain - ceasecovid19.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-c8d3aa16-8d9a-4da4-9d39-3881bcd74400">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>ceasecovid19.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6ad485b8-7657-ecbf-b998-5c59ae204401" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>ceasecovid.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6ad485b8-7657-ecbf-b998-5c59ae204401">
+                <cybox:Title>domain - ceasecovid.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-5a31d554-502c-4dd6-9056-aa87ddb9ac65">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>ceasecovid.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-5e478e15-484b-b2a2-33ae-fb210dd726ff" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>coronado.info from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-5e478e15-484b-b2a2-33ae-fb210dd726ff">
+                <cybox:Title>domain - coronado.info</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-feb8fad1-a1bb-4953-9af2-b12808f332c0">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>coronado.info</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b3702b81-b6a0-fd0b-582d-e769f59c136a" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>coronadosdegloria.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b3702b81-b6a0-fd0b-582d-e769f59c136a">
+                <cybox:Title>domain - coronadosdegloria.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-106ab63f-617d-4ab4-981e-a795d39f0a8f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>coronadosdegloria.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-0ac8e455-3805-c5a9-2ad7-df988fd45997" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>coronaskull.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-0ac8e455-3805-c5a9-2ad7-df988fd45997">
+                <cybox:Title>domain - coronaskull.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-c9bda85e-bfa2-4327-89a8-8be66f09b668">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>coronaskull.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-3713a9f1-3ac2-2034-dd69-d58d69ee807b" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>coronations-empirical.click from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-3713a9f1-3ac2-2034-dd69-d58d69ee807b">
+                <cybox:Title>domain - coronations-empirical.click</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-e8187d81-29a1-4000-a163-5fe5c2303296">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>coronations-empirical.click</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6a22b729-e266-a4ca-322c-1a42c2d93b85" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid119criticalcare.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6a22b729-e266-a4ca-322c-1a42c2d93b85">
+                <cybox:Title>domain - covid119criticalcare.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-8a694248-bd74-4c79-afa8-78df83513086">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid119criticalcare.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-da464642-78be-aa28-1e6a-d8920d1ceda7" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid19criticakcare.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-da464642-78be-aa28-1e6a-d8920d1ceda7">
+                <cybox:Title>domain - covid19criticakcare.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-bf98a292-85cc-405d-a284-f69ec96b1fc3">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid19criticakcare.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-16529987-45dc-c05a-a3ba-1be3823e7313" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid19criticalcaree.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-16529987-45dc-c05a-a3ba-1be3823e7313">
+                <cybox:Title>domain - covid19criticalcaree.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-5cd1087d-5492-44b5-b637-90d3d2a503a9">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid19criticalcaree.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-29d64e22-86bf-fe4d-06c5-dc8793e6177c" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid19critocalcare.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-29d64e22-86bf-fe4d-06c5-dc8793e6177c">
+                <cybox:Title>domain - covid19critocalcare.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-d4827e6d-e8a3-4afa-b083-5aa418a49be2">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid19critocalcare.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8402664e-f925-aea8-9a74-467171dadae5" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid19croticalcare.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8402664e-f925-aea8-9a74-467171dadae5">
+                <cybox:Title>domain - covid19croticalcare.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-3ee16b23-1153-42f7-95b1-3495bf5a098f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid19croticalcare.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-c8ae23b4-80b9-e299-1d20-69eba89397a6" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid19medical.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c8ae23b4-80b9-e299-1d20-69eba89397a6">
+                <cybox:Title>domain - covid19medical.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-2e7adb90-2cbe-4b29-be9c-6765caef4416">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid19medical.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-30736f11-d4b7-e72a-9c70-aa7ebf342b53" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid-23.info from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-30736f11-d4b7-e72a-9c70-aa7ebf342b53">
+                <cybox:Title>domain - covid-23.info</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-e3021173-cfe6-4d9b-afa9-763fc68758bf">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid-23.info</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6f8979db-40e7-dd14-2c33-01619ff7680b" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid9criticalcare.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6f8979db-40e7-dd14-2c33-01619ff7680b">
+                <cybox:Title>domain - covid9criticalcare.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-25095741-9401-4aa2-b3ba-9fac587780cf">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid9criticalcare.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-0d63a447-2ba9-6d9f-f7a2-3dbee77cd1c2" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covidcareco.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-0d63a447-2ba9-6d9f-f7a2-3dbee77cd1c2">
+                <cybox:Title>domain - covidcareco.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-f87137e4-6ee4-4509-b089-e7e3bfe0aa4a">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covidcareco.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b7d6c6f4-de44-7531-54b8-50bb170fa49d" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covid-class-action.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b7d6c6f4-de44-7531-54b8-50bb170fa49d">
+                <cybox:Title>domain - covid-class-action.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-b21e9ff5-fbdc-4264-a472-94f454279da4">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covid-class-action.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-5ce925d1-b0a0-8931-f837-720dfc9c4b60" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covidtribunal.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-5ce925d1-b0a0-8931-f837-720dfc9c4b60">
+                <cybox:Title>domain - covidtribunal.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-5323a75b-575e-48d7-90ae-c1e6c72edf46">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covidtribunal.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-234f7194-1a3c-ae34-4cc5-fa469915b228" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covidvariante.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-234f7194-1a3c-ae34-4cc5-fa469915b228">
+                <cybox:Title>domain - covidvariante.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-f2cee2db-b07d-4262-ab2e-71f3f06e5f19">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covidvariante.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-3aa05e22-66e5-36a9-0376-7c82d9823176" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>covidvdemocracy.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-3aa05e22-66e5-36a9-0376-7c82d9823176">
+                <cybox:Title>domain - covidvdemocracy.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-9e96b354-6573-4833-b146-855d791c4268">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>covidvdemocracy.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-c08cc96e-1669-4589-fcab-3b975c5a96ee" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>cruzcorona.net from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c08cc96e-1669-4589-fcab-3b975c5a96ee">
+                <cybox:Title>domain - cruzcorona.net</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-518c1483-c4e6-4968-b1f6-087790bc784e">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>cruzcorona.net</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-4860170f-dcfe-d580-abcc-476696422748" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>divyabharatha.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-4860170f-dcfe-d580-abcc-476696422748">
+                <cybox:Title>domain - divyabharatha.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1d4ebcd5-9c2b-4008-93a9-4ba28b1dc816">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>divyabharatha.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-3fcd9236-1668-d5e3-3256-4d533bed30c8" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>drcoronamedigest.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-3fcd9236-1668-d5e3-3256-4d533bed30c8">
+                <cybox:Title>domain - drcoronamedigest.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-0b2f2a05-801e-45ff-9635-c4001012b10a">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>drcoronamedigest.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-e7744bc1-5a0a-93ac-eff6-1bd1ff63d52b" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>dtsbharath.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-e7744bc1-5a0a-93ac-eff6-1bd1ff63d52b">
+                <cybox:Title>domain - dtsbharath.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-e2e38687-845f-4f55-9a6e-883f0786398e">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>dtsbharath.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-c73ef026-0fd5-1c3c-953f-6ef61f44e3ca" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>elumencovidtest.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c73ef026-0fd5-1c3c-953f-6ef61f44e3ca">
+                <cybox:Title>domain - elumencovidtest.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1e1b13a0-971f-42df-b310-14e88da5f69d">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>elumencovidtest.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-45a5ba6d-7a83-4f07-aceb-662eab479aba" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>entrecoronadeespinas.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-45a5ba6d-7a83-4f07-aceb-662eab479aba">
+                <cybox:Title>domain - entrecoronadeespinas.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-d089418d-e3bf-40e9-8ac5-034ac93aefbb">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>entrecoronadeespinas.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-88e7534e-0c0c-70b5-f4a0-293c1a1d47eb" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>fundtbvaccine2025.org from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-88e7534e-0c0c-70b5-f4a0-293c1a1d47eb">
+                <cybox:Title>domain - fundtbvaccine2025.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-98fd6206-0cf7-4ff3-91f9-b4e536248d5f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>fundtbvaccine2025.org</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-5d772f5b-fc8b-f8ed-6823-da49eecd9db8" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>gosuslugi-rucovid-certstatus25oidj-7dsubsd7f-dsuif8f7.online from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-5d772f5b-fc8b-f8ed-6823-da49eecd9db8">
+                <cybox:Title>domain - gosuslugi-rucovid-certstatus25oidj-7dsubsd7f-dsuif8f7.online</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-a776db5b-b59d-48be-81a9-77c62dd7f156">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>gosuslugi-rucovid-certstatus25oidj-7dsubsd7f-dsuif8f7.online</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d7aa26b7-75b3-7919-2d5e-d9b3ab2c9fa4" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>inrbharat.world from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d7aa26b7-75b3-7919-2d5e-d9b3ab2c9fa4">
+                <cybox:Title>domain - inrbharat.world</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-87e5f8cc-806d-429e-b952-07994fa1b1f4">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>inrbharat.world</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-4d027bf6-9aac-9575-3920-938d44793e5f" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>nayabharath.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-4d027bf6-9aac-9575-3920-938d44793e5f">
+                <cybox:Title>domain - nayabharath.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-b8e04e85-6e77-4f09-b0ca-dba4cfac972e">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>nayabharath.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-3f86d027-1719-a6ee-a662-de94ef9cd2ed" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>nutritionforcovid.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-3f86d027-1719-a6ee-a662-de94ef9cd2ed">
+                <cybox:Title>domain - nutritionforcovid.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-7a05eb47-d5c5-4603-8688-022c54c29832">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>nutritionforcovid.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-e5b468da-0c4c-8a5f-ba95-e5ce17361c99" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>proudlyunvaccinated.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-e5b468da-0c4c-8a5f-ba95-e5ce17361c99">
+                <cybox:Title>domain - proudlyunvaccinated.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-4b2cf476-9198-4214-81ac-b1251e0eface">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>proudlyunvaccinated.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-028ad18e-1a39-2752-1aab-1008786c7744" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>purificadordeairecovid.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-028ad18e-1a39-2752-1aab-1008786c7744">
+                <cybox:Title>domain - purificadordeairecovid.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-af3f3d67-de10-482b-82ac-f79f90fb00c6">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>purificadordeairecovid.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ec66ee37-b4bb-00a2-d238-b5778f5bf702" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>rsecovidargentina.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ec66ee37-b4bb-00a2-d238-b5778f5bf702">
+                <cybox:Title>domain - rsecovidargentina.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-dcc2f272-69d7-4722-9f3a-335ab97368b1">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>rsecovidargentina.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6f724c07-4ba2-5978-7ee2-1afd97391714" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>seniorsdailycorona.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6f724c07-4ba2-5978-7ee2-1afd97391714">
+                <cybox:Title>domain - seniorsdailycorona.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-6ec37830-3043-4b7f-aed1-c6de36984c5e">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>seniorsdailycorona.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-a6f89dc0-9e23-b10f-04a0-41d02996846d" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>spiralbharat.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-a6f89dc0-9e23-b10f-04a0-41d02996846d">
+                <cybox:Title>domain - spiralbharat.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-b79de90a-ec7f-4190-884f-bd95d3240535">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>spiralbharat.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-737054eb-6a10-76b8-4376-8c41b0df7a3f" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>techycovidteacher.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-737054eb-6a10-76b8-4376-8c41b0df7a3f">
+                <cybox:Title>domain - techycovidteacher.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1d6e2864-4225-4237-b893-d5f6945ce76c">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>techycovidteacher.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-70a510e0-9ca8-f442-f8cd-089bf336ea78" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>vaccinehoppe.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-70a510e0-9ca8-f442-f8cd-089bf336ea78">
+                <cybox:Title>domain - vaccinehoppe.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-5f039d24-bc91-44af-8776-4e155990d267">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>vaccinehoppe.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8ccc6557-4dc1-429c-f927-fc41d9392ba0" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>vaccineinjured.xyz from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8ccc6557-4dc1-429c-f927-fc41d9392ba0">
+                <cybox:Title>domain - vaccineinjured.xyz</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-45807b36-0398-473a-bb69-79e6ca55836a">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>vaccineinjured.xyz</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-dd9dfe3e-74b6-85f3-6307-b4e01f00446a" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>vaccinerecover.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-dd9dfe3e-74b6-85f3-6307-b4e01f00446a">
+                <cybox:Title>domain - vaccinerecover.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-90b2ff59-2ae5-49fd-9f6b-51da8ecbe01f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>vaccinerecover.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-1e3bd29b-1381-e5e2-2b03-4f061c1da4ef" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>vaccinerehabilitation.org from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-1e3bd29b-1381-e5e2-2b03-4f061c1da4ef">
+                <cybox:Title>domain - vaccinerehabilitation.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-51f314d1-af5d-4a6e-8f45-c3f55aa3daaa">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>vaccinerehabilitation.org</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-3bcc35f4-6a31-4ea5-5c76-cc9c93848881" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>vaccinerehab.org from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-3bcc35f4-6a31-4ea5-5c76-cc9c93848881">
+                <cybox:Title>domain - vaccinerehab.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-745e79f8-8f5c-4e7a-955f-68393a335c50">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>vaccinerehab.org</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d9a40856-abaa-714c-c2e3-a5332cad851e" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>vaccineshoope.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d9a40856-abaa-714c-c2e3-a5332cad851e">
+                <cybox:Title>domain - vaccineshoope.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-6c69e8a7-89d6-486c-96c9-c47e71819b04">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>vaccineshoope.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6c651900-d21e-ece2-9833-7db393a6d11e" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>wuhanlianlian.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6c651900-d21e-ece2-9833-7db393a6d11e">
+                <cybox:Title>domain - wuhanlianlian.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-052f7fbc-2e98-4f07-8ab8-b417ca71d4b5">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>wuhanlianlian.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-0e6f99b2-a12e-3fca-d87f-6e2149511452" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>wuhanneiyi.sbs from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-0e6f99b2-a12e-3fca-d87f-6e2149511452">
+                <cybox:Title>domain - wuhanneiyi.sbs</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-4705491f-0bd5-4835-81a1-63fbdcbe1d89">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>wuhanneiyi.sbs</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-0e5197ea-a8f6-0243-2537-6e020b270fc9" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>wuhannongyao.sbs from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-0e5197ea-a8f6-0243-2537-6e020b270fc9">
+                <cybox:Title>domain - wuhannongyao.sbs</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-fdd9e677-2e2c-487f-a4a1-0f69f0bb071a">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>wuhannongyao.sbs</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-c38afbbf-ac8c-b94e-49de-5c6038fe59c6" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>wuhanxinjiamei.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c38afbbf-ac8c-b94e-49de-5c6038fe59c6">
+                <cybox:Title>domain - wuhanxinjiamei.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-915924e5-ce8d-4c14-94df-88167e8cd755">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>wuhanxinjiamei.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ed330882-5ee7-74b8-055f-8a29fd0f2a2f" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>wuhanzhituo.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ed330882-5ee7-74b8-055f-8a29fd0f2a2f">
+                <cybox:Title>domain - wuhanzhituo.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-c3f1fe10-ea9f-4f9b-9d02-140584795777">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>wuhanzhituo.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-cf243ccd-d386-6ab8-dc12-68d06cf7581b" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>wwwcovid19criticalcare.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-cf243ccd-d386-6ab8-dc12-68d06cf7581b">
+                <cybox:Title>domain - wwwcovid19criticalcare.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-c8ca37f0-d924-4ee7-a862-30b4705149db">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>wwwcovid19criticalcare.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-da7abac8-cd4e-5721-e0f3-b5b444e6fe53" timestamp="2023-01-01T22:43:01" xsi:type="indicator:IndicatorType">
+            <indicator:Title>yourfreecovidkits.com from https://otx.alienvault.com/pulse/63b20c74bd0647afe755ee47</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-da7abac8-cd4e-5721-e0f3-b5b444e6fe53">
+                <cybox:Title>domain - yourfreecovidkits.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-08400223-3ded-4148-9d0b-aaec73bfc55f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>yourfreecovidkits.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-416d7c2f-17cf-4a59-b161-e46df6a32990" timestamp="2023-09-06T05:52:48.059271+00:00" xsi:type="incident:IncidentType">
+            <incident:Description>Our team compiled a list of these domain names from our Newly Registered Domains feed that can be used to protect your family, employees and customers. The list is based solely on the domain names' and registration timeframe, no other assumptions are made. The information is provided as-is, with no warranties. For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</incident:Description>
+        </stix:Incident>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

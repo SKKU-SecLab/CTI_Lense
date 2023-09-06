@@ -1,0 +1,13 @@
+type,infoin,count,order,,,,,425,59.10987483
+Threat actor (STIX 1),Correct,59.10987483,1,,,,,120,16.68984701
+Threat actor (STIX 1),Incorrect,16.68984701,2,,,,,174,24.20027816
+Threat actor (STIX 1),Unmatched,24.20027816,3,,,,,746,39.24250395
+TTP (STIX 1),Correct,39.24250395,1,,,,,9,0.473435034
+TTP (STIX 1),Incorrect,0.473435034,2,,,,,1146,60.28406102
+TTP (STIX 1),Unmatched,60.28406102,3,,,,,426,58.92116183
+Threat actor (STIX 2),Correct,58.92116183,1,,,,,122,16.87413555
+Threat actor (STIX 2),Incorrect,16.87413555,2,,,,,175,24.20470263
+Threat actor (STIX 2),Unmatched,24.20470263,3,,,,,1160,42.44420051
+Malware (STIX 2),Correct,42.44420051,1,,,,,0,0
+Malware (STIX 2),Incorrect,0,2,,,,,1573,57.55579949
+Malware (STIX 2),Unmatched,57.55579949,3,,,,,,

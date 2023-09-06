@@ -1,0 +1,69 @@
+<stix:STIX_Package xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-e1e708c0-0cbb-4b98-84e3-773e9ed8bc74" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Active Bedep DGA(s) for 20230101</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Description>Some active Bedep domains generated via DGA for 20230101.  For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</stix:Description>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63b21d7364ab23ecbc771102</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: Bedep, DGA</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T23:55:31.460000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference/>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-85488392-96a0-6fdd-fbe5-db42630f7cc8" timestamp="2023-01-01T23:55:32" xsi:type="indicator:IndicatorType">
+            <indicator:Title>czbhjwbzifko.com from https://otx.alienvault.com/pulse/63b21d7364ab23ecbc771102</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-85488392-96a0-6fdd-fbe5-db42630f7cc8">
+                <cybox:Title>domain - czbhjwbzifko.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-b285966a-ad3e-4c08-96f0-87da8690a3e4">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>czbhjwbzifko.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-5053b85c-c45e-fb78-ca3c-1f850997e1c4" timestamp="2023-01-01T23:55:32" xsi:type="indicator:IndicatorType">
+            <indicator:Title>jxxzpzhxrxdqwu.com from https://otx.alienvault.com/pulse/63b21d7364ab23ecbc771102</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-5053b85c-c45e-fb78-ca3c-1f850997e1c4">
+                <cybox:Title>domain - jxxzpzhxrxdqwu.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-1ec4045b-bcc2-455a-b2d0-438b99bed831">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>jxxzpzhxrxdqwu.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-89f3a8e5-473d-71d1-bbee-35f2a9d13864" timestamp="2023-01-01T23:55:32" xsi:type="indicator:IndicatorType">
+            <indicator:Title>mhcueccsnqalcw2s.com from https://otx.alienvault.com/pulse/63b21d7364ab23ecbc771102</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-89f3a8e5-473d-71d1-bbee-35f2a9d13864">
+                <cybox:Title>domain - mhcueccsnqalcw2s.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:DomainName-be994e3a-74c6-418d-8fed-a6d1d4ed4a7f">
+                    <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType" type="FQDN">
+                        <DomainNameObj:Value>mhcueccsnqalcw2s.com</DomainNameObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-a96271e1-129a-42e2-8588-3d4d123ddea2" timestamp="2023-09-06T05:52:48.125705+00:00" xsi:type="incident:IncidentType">
+            <incident:Description>Some active Bedep domains generated via DGA for 20230101.  For our Enterprise Threat Data services, please visit https://malwarepatrol.net/ or contact us at commercial@malwarepatrol.net.</incident:Description>
+        </stix:Incident>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

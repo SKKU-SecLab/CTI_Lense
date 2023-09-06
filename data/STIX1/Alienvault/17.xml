@@ -1,0 +1,385 @@
+<stix:STIX_Package xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:URIObj="http://cybox.mitre.org/objects#URIObject-2" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-0f352404-af75-4101-8c49-efd01fc50693" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>Twitter Feed - AP_Zenmashi - 01-12-2022</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: phishing, scam</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T00:52:34.528000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://twitter.com/AP_Zenmashi/status/1598188131303292928, https://twitter.com/AP_Zenmashi/status/1598188563589234688, https://twitter.com/AP_Zenmashi/status/1598240788764295169, https://twitter.com/AP_Zenmashi/status/1598240980448464896, https://twitter.com/AP_Zenmashi/status/1598241232110899202, https://twitter.com/AP_Zenmashi/status/1598241429431586816, https://twitter.com/AP_Zenmashi/status/1598241670478237698, https://twitter.com/AP_Zenmashi/status/1598241920375197697, https://twitter.com/AP_Zenmashi/status/1598242096795725824, https://twitter.com/AP_Zenmashi/status/1598242317542227968, https://twitter.com/AP_Zenmashi/status/1598242505719676929, https://twitter.com/AP_Zenmashi/status/1598242698732838912, https://twitter.com/AP_Zenmashi/status/1598259733286178816, https://twitter.com/AP_Zenmashi/status/1598259942225387520, https://twitter.com/AP_Zenmashi/status/1598309293719257090, https://twitter.com/AP_Zenmashi/status/1598309432672546817, https://twitter.com/AP_Zenmashi/status/1598353931968532492, https://twitter.com/AP_Zenmashi/status/1598354079486742528, https://twitter.com/AP_Zenmashi/status/1598354219261911041, https://twitter.com/AP_Zenmashi/status/1598354450329894912, https://twitter.com/AP_Zenmashi/status/1598354612926283778, https://twitter.com/AP_Zenmashi/status/1598354768950616064, https://twitter.com/AP_Zenmashi/status/1598354938111098880, https://twitter.com/AP_Zenmashi/status/1598355083166900224, https://twitter.com/AP_Zenmashi/status/1598355610969554949, https://twitter.com/AP_Zenmashi/status/1598355904772321280, https://twitter.com/AP_Zenmashi/status/1598361486027788288, https://twitter.com/AP_Zenmashi/status/1598377279117492224, https://twitter.com/AP_Zenmashi/status/1598377502409252864, https://twitter.com/AP_Zenmashi/status/1598377714943025153, https://twitter.com/AP_Zenmashi/status/1598378016111226880, https://twitter.com/AP_Zenmashi/status/1598378265894612992</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-c84a7ad3-ea36-1d14-2737-531a00add648" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://yodobashi.czdcty.cn from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c84a7ad3-ea36-1d14-2737-531a00add648">
+                <cybox:Title>URL - https://yodobashi.czdcty.cn</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-bc751229-a474-4929-99df-d2fd35534755">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://yodobashi.czdcty.cn</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-38d1224e-44ef-b342-6131-c7921eb750e0" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://yodobashi.rjxnf.cn from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-38d1224e-44ef-b342-6131-c7921eb750e0">
+                <cybox:Title>URL - https://yodobashi.rjxnf.cn</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-cc902269-f5b4-482c-9329-8f191b1781bd">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://yodobashi.rjxnf.cn</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d1839d37-04b0-a9ba-f15a-e5d6ba7206fa" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://otjofmhehd.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d1839d37-04b0-a9ba-f15a-e5d6ba7206fa">
+                <cybox:Title>URL - https://otjofmhehd.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-8793af83-5a11-4fa2-9f51-8d2b2e6dfbb2">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://otjofmhehd.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-fc4df020-1e77-c180-ac22-c2615031f03f" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://qdefclfwso.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-fc4df020-1e77-c180-ac22-c2615031f03f">
+                <cybox:Title>URL - https://qdefclfwso.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-2e59e0ea-9452-4f67-bcc2-182591964d21">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://qdefclfwso.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-bbb06f93-2f98-ad68-c5b7-dbfe337afa94" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://injsnttdlo.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-bbb06f93-2f98-ad68-c5b7-dbfe337afa94">
+                <cybox:Title>URL - https://injsnttdlo.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-06b26ba3-91f2-4abc-9ae0-3f55ba0f289d">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://injsnttdlo.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6220470a-39f9-e9a1-9010-b46a22f3f7f5" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://txzobvurmq.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6220470a-39f9-e9a1-9010-b46a22f3f7f5">
+                <cybox:Title>URL - https://txzobvurmq.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-c34974b5-8703-456d-a052-638c2f8538ab">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://txzobvurmq.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d050c126-26af-f002-175c-e90debfe2b5c" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://cobttbszne.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d050c126-26af-f002-175c-e90debfe2b5c">
+                <cybox:Title>URL - https://cobttbszne.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-ddb27b4b-27f5-4e8c-8f38-8b26cb0b2b1c">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://cobttbszne.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-7f7023cd-40cb-aef7-bc7a-ac84adb1b096" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://vlezycgojn.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-7f7023cd-40cb-aef7-bc7a-ac84adb1b096">
+                <cybox:Title>URL - https://vlezycgojn.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-5819113f-c2f1-4236-844e-90e0bab35e97">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://vlezycgojn.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d1d3935a-2e3d-3284-783e-ead70fdf0ba4" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://aztskrqqvx.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d1d3935a-2e3d-3284-783e-ead70fdf0ba4">
+                <cybox:Title>URL - https://aztskrqqvx.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-c5a2f5a6-9529-4345-9585-8814ee6456d9">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://aztskrqqvx.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-297db2d3-533a-26e7-0d4f-97fb2054fd90" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://sspczhqqcd.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-297db2d3-533a-26e7-0d4f-97fb2054fd90">
+                <cybox:Title>URL - https://sspczhqqcd.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-a57dd3a2-d51d-42b8-a504-0e4d579feb4d">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://sspczhqqcd.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-75a204ba-7d34-8422-ce34-9293415bf5c3" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://izbxftpubk.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-75a204ba-7d34-8422-ce34-9293415bf5c3">
+                <cybox:Title>URL - https://izbxftpubk.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-c6fd23f9-145a-49e2-a518-8b930db515a8">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://izbxftpubk.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-01825709-e88e-a2c6-b0f9-3493c58b530a" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://wftqqjiymc.duckdns.org from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-01825709-e88e-a2c6-b0f9-3493c58b530a">
+                <cybox:Title>URL - https://wftqqjiymc.duckdns.org</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-5a422876-fa0d-41ca-98f9-6cbdc1432c2f">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://wftqqjiymc.duckdns.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-5b7953f4-67a4-d4ae-bac6-866efb0d825c" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://belcenceshop.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-5b7953f4-67a4-d4ae-bac6-866efb0d825c">
+                <cybox:Title>URL - https://belcenceshop.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-3d41707f-f52d-421d-bfe5-eeebbec9835b">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://belcenceshop.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-e4fb352a-9a2e-c030-9340-4dd48549ef2c" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://www.belcenceshop.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-e4fb352a-9a2e-c030-9340-4dd48549ef2c">
+                <cybox:Title>URL - https://www.belcenceshop.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-1f198343-c07e-4b70-ab2f-8ce9f1c1d708">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://www.belcenceshop.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-214ba6a8-ef0e-41c1-a4f2-abb059c38b42" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://amaryllisiong.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-214ba6a8-ef0e-41c1-a4f2-abb059c38b42">
+                <cybox:Title>URL - https://amaryllisiong.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-b7dfd3da-03dc-47d4-a002-3195168050b5">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://amaryllisiong.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-407a1580-a5f2-56c3-a804-90b58607ca27" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://sinclairitui.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-407a1580-a5f2-56c3-a804-90b58607ca27">
+                <cybox:Title>URL - https://sinclairitui.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-181fe989-f4a0-44bd-846d-2076fb540840">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://sinclairitui.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-c1a5076d-7f99-e11e-6bdf-2c8597f95cdd" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://prosiperousi.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-c1a5076d-7f99-e11e-6bdf-2c8597f95cdd">
+                <cybox:Title>URL - https://prosiperousi.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-9fe88bca-3d8a-4531-81d6-2121fdbfef3d">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://prosiperousi.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8239af5b-0d16-6e9d-07de-6e126156c18b" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://grayisoni.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-8239af5b-0d16-6e9d-07de-6e126156c18b">
+                <cybox:Title>URL - https://grayisoni.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-4c43a46d-8760-4abd-80c8-ae45331f6c9b">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://grayisoni.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-dd6f06cb-b158-cd80-7e06-31874cd4d9a3" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://odwinmaishi.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-dd6f06cb-b158-cd80-7e06-31874cd4d9a3">
+                <cybox:Title>URL - https://odwinmaishi.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-468dec50-b734-4ee7-8690-1cca3866a45c">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://odwinmaishi.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-f0ac2589-c56a-9237-8e6d-b2ebc413514f" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://lourishing.bar from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-f0ac2589-c56a-9237-8e6d-b2ebc413514f">
+                <cybox:Title>URL - https://lourishing.bar</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-521bc9ab-f3a1-4e6b-893b-6dd8f96e10cf">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://lourishing.bar</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-1395afd3-2e34-9abe-6a0f-ec52fc01f9db" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://ckelightful.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-1395afd3-2e34-9abe-6a0f-ec52fc01f9db">
+                <cybox:Title>URL - https://ckelightful.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-df706417-9930-473d-9465-7b2c21e29364">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://ckelightful.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-934e9a71-7923-5308-3bf7-1b4e9b8c97b3" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://sso.login.y-bb.email from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-934e9a71-7923-5308-3bf7-1b4e9b8c97b3">
+                <cybox:Title>URL - https://sso.login.y-bb.email</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-212ad271-f488-46c0-b00d-63f52f066e23">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://sso.login.y-bb.email</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-69c07583-d155-c1eb-85a5-791db7dc03d8" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://joksephineng.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-69c07583-d155-c1eb-85a5-791db7dc03d8">
+                <cybox:Title>URL - https://joksephineng.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-9e252823-236b-438d-a7f1-9f67b467cdff">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://joksephineng.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-640538b7-4fcf-1bb2-d1c8-25c1c720a77c" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://miriamsouday.bar from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-640538b7-4fcf-1bb2-d1c8-25c1c720a77c">
+                <cybox:Title>URL - https://miriamsouday.bar</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-79b01301-5d7b-4185-a079-8b155db8748d">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://miriamsouday.bar</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6b1a00c7-7f5c-085e-6d30-1e7466f1df01" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://www.smbn.live from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6b1a00c7-7f5c-085e-6d30-1e7466f1df01">
+                <cybox:Title>URL - https://www.smbn.live</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-3ed68fc3-2018-4762-a086-f57677228fec">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://www.smbn.live</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-d1b4b13c-5ffd-6d5b-1a43-a5a18a0bf576" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://smbn.live from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-d1b4b13c-5ffd-6d5b-1a43-a5a18a0bf576">
+                <cybox:Title>URL - https://smbn.live</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-fa3c4824-b6a4-4b00-8998-7ece2a2a4050">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://smbn.live</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-66928898-fd00-48a3-a33d-93e8fb4249cb" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://advances.tailingi.com from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-66928898-fd00-48a3-a33d-93e8fb4249cb">
+                <cybox:Title>URL - https://advances.tailingi.com</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-6f24bb71-e2e7-4db5-9a3f-bd192a1c9ad3">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://advances.tailingi.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-590d56a8-4bc1-57f3-b71f-691d12512962" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://maicredmin.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-590d56a8-4bc1-57f3-b71f-691d12512962">
+                <cybox:Title>URL - https://maicredmin.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-f3f8c535-cd2b-4db3-9616-e4654267a92a">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://maicredmin.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ddd7932d-413e-1408-70a2-c9e68d234337" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://maicredinfo.xyz from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-ddd7932d-413e-1408-70a2-c9e68d234337">
+                <cybox:Title>URL - https://maicredinfo.xyz</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-bf060c97-3379-4f5f-bea6-03d58be19e76">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://maicredinfo.xyz</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-6cc377ec-c198-61f1-d757-026f73d7b1b3" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://maicredmin.xyz from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-6cc377ec-c198-61f1-d757-026f73d7b1b3">
+                <cybox:Title>URL - https://maicredmin.xyz</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-af3c1516-71d2-48e9-b639-185b0f6d9737">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://maicredmin.xyz</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-3b4612c4-c7dc-ef66-f6f6-003b45209c0f" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://maicredmyid.xyz from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-3b4612c4-c7dc-ef66-f6f6-003b45209c0f">
+                <cybox:Title>URL - https://maicredmyid.xyz</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-ad0177c2-34b1-4784-9084-99c0365c1ba4">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://maicredmyid.xyz</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-df6686c6-3066-1665-461b-c1d19ce0b289" timestamp="2022-12-02T00:00:56" xsi:type="indicator:IndicatorType">
+            <indicator:Title>https://maicredmyid.top from https://otx.alienvault.com/pulse/63894037dccc0b2c06aef00b</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-df6686c6-3066-1665-461b-c1d19ce0b289">
+                <cybox:Title>URL - https://maicredmyid.top</cybox:Title>
+                <cybox:Object id="alienvault-otx:URI-8325c354-11e1-48e7-ad8a-f83f28a0cd2e">
+                    <cybox:Properties xsi:type="URIObj:URIObjectType" type="URL">
+                        <URIObj:Value>https://maicredmyid.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-c716dd9e-82de-4583-a337-5801c22bcfce" timestamp="2023-09-06T05:52:49.933208+00:00" xsi:type="incident:IncidentType"/>
+    </stix:Incidents>
+</stix:STIX_Package>
+    

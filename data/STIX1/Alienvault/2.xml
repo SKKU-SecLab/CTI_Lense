@@ -1,0 +1,137 @@
+<stix:STIX_Package xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:incident="http://stix.mitre.org/Incident-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:alienvault-otx="https://otx.alienvault.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" id="alienvault-otx:Package-352a34a8-d326-4190-b19b-a2b954edd4a9" version="1.2">
+    <stix:STIX_Header>
+        <stix:Title>New CryWiper Trojan pretends to be a ransomware</stix:Title>
+        <stix:Package_Intent xsi:type="stixVocabs:PackageIntentVocab-1.0">Indicators</stix:Package_Intent>
+        <stix:Description>In the fall of 2022, Securelist recorded attempts by a previously unknown Trojan, which we named CryWiper, to attack the organization's network in the Russian Federation.</stix:Description>
+        <stix:Short_Description>https://otx.alienvault.com/pulse/638a651c311f3132e1e04acf</stix:Short_Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                    <simpleMarking:Statement>alienvault-otx-tags: crywiper, trojan, malware</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+        <stix:Information_Source>
+            <stixCommon:Description>Alienvault OTX - https://otx.alienvault.com/</stixCommon:Description>
+            <stixCommon:Identity>
+                <stixCommon:Name>Alienvault OTX</stixCommon:Name>
+            </stixCommon:Identity>
+            <stixCommon:Time>
+                <cyboxCommon:Produced_Time>2023-01-01T20:01:44.408000</cyboxCommon:Produced_Time>
+            </stixCommon:Time>
+            <stixCommon:References>
+                <stixCommon:Reference>https://securelist.ru/novyj-troyanec-crywiper/106114/</stixCommon:Reference>
+            </stixCommon:References>
+        </stix:Information_Source>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="alienvault-otx:indicator-01a949e2-9f80-72dc-3c84-1f1406a105d7" timestamp="2022-12-02T20:50:37" xsi:type="indicator:IndicatorType">
+            <indicator:Title>0c6d33da653230f56a7168e73f1448ac from https://otx.alienvault.com/pulse/638a651c311f3132e1e04acf</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-01a949e2-9f80-72dc-3c84-1f1406a105d7">
+                <cybox:Title>FileHash-MD5 - 0c6d33da653230f56a7168e73f1448ac</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-2bcca9d3-14bc-43ea-ad70-05209234dc2f">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>0c6d33da653230f56a7168e73f1448ac</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-42f0364d-3e71-5732-e8f2-54c4d3dcc09f" timestamp="2022-12-02T20:50:37" xsi:type="indicator:IndicatorType">
+            <indicator:Title>14808919a8c40ccada6fb056b7fd7373 from https://otx.alienvault.com/pulse/638a651c311f3132e1e04acf</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-42f0364d-3e71-5732-e8f2-54c4d3dcc09f">
+                <cybox:Title>FileHash-MD5 - 14808919a8c40ccada6fb056b7fd7373</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-b45122ff-2e66-4afb-9776-ca57561ca382">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>14808919a8c40ccada6fb056b7fd7373</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-2f6b962d-7193-515c-878a-1aa506bb0c36" timestamp="2022-12-02T20:50:37" xsi:type="indicator:IndicatorType">
+            <indicator:Title>4a42f739ce694db7b3cdd3c233ce7fb1 from https://otx.alienvault.com/pulse/638a651c311f3132e1e04acf</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-2f6b962d-7193-515c-878a-1aa506bb0c36">
+                <cybox:Title>FileHash-MD5 - 4a42f739ce694db7b3cdd3c233ce7fb1</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-13ebecc5-cc43-48e4-bed1-4e44c94e72c4">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>4a42f739ce694db7b3cdd3c233ce7fb1</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-b301d3ac-b3ae-3c74-d789-99efdcd04e5f" timestamp="2022-12-02T20:50:37" xsi:type="indicator:IndicatorType">
+            <indicator:Title>71d9e6ee26d46c4dbb3d8e6df19dda7d from https://otx.alienvault.com/pulse/638a651c311f3132e1e04acf</indicator:Title>
+            <indicator:Observable id="alienvault-otx:Observable-b301d3ac-b3ae-3c74-d789-99efdcd04e5f">
+                <cybox:Title>FileHash-MD5 - 71d9e6ee26d46c4dbb3d8e6df19dda7d</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-81bf8bd3-5bfa-4fc0-8133-e4e82522a07d">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>71d9e6ee26d46c4dbb3d8e6df19dda7d</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-8bc08436-f191-2e38-569b-10882cfe1433" timestamp="2022-12-02T20:50:37" xsi:type="indicator:IndicatorType">
+            <indicator:Title>0855fdf805a10061b8985f86bfeda6d15eb056ce from https://otx.alienvault.com/pulse/638a651c311f3132e1e04acf</indicator:Title>
+            <indicator:Description>SHA1 of 0c6d33da653230f56a7168e73f1448ac</indicator:Description>
+            <indicator:Observable id="alienvault-otx:Observable-8bc08436-f191-2e38-569b-10882cfe1433">
+                <cybox:Title>FileHash-SHA1 - 0855fdf805a10061b8985f86bfeda6d15eb056ce</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-4f5e3d44-cdfe-4391-b678-26ea531606a7">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA1</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>0855fdf805a10061b8985f86bfeda6d15eb056ce</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+        <stix:Indicator id="alienvault-otx:indicator-ea31c28f-5f85-e23e-774e-5bc3303ef1a2" timestamp="2022-12-02T20:50:37" xsi:type="indicator:IndicatorType">
+            <indicator:Title>c62f502e9abb7f5d96763a0fcd6ed7aebd0950d96187c542dafb54e560e32159 from https://otx.alienvault.com/pulse/638a651c311f3132e1e04acf</indicator:Title>
+            <indicator:Description>SHA256 of 0c6d33da653230f56a7168e73f1448ac</indicator:Description>
+            <indicator:Observable id="alienvault-otx:Observable-ea31c28f-5f85-e23e-774e-5bc3303ef1a2">
+                <cybox:Title>FileHash-SHA256 - c62f502e9abb7f5d96763a0fcd6ed7aebd0950d96187c542dafb54e560e32159</cybox:Title>
+                <cybox:Object id="alienvault-otx:File-16e4c345-6851-470f-b0bd-7c36a25112d9">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>c62f502e9abb7f5d96763a0fcd6ed7aebd0950d96187c542dafb54e560e32159</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+        </stix:Indicator>
+    </stix:Indicators>
+    <stix:Incidents>
+        <stix:Incident id="alienvault-otx:incident-3f51bbb0-4a6a-4965-9351-9b318147aef3" timestamp="2023-09-06T05:52:38.879543+00:00" xsi:type="incident:IncidentType">
+            <incident:Description>In the fall of 2022, Securelist recorded attempts by a previously unknown Trojan, which we named CryWiper, to attack the organization's network in the Russian Federation.</incident:Description>
+            <incident:Victim id="alienvault-otx:country-45855688-011b-856c-0168-75ad9125d7ff">
+                <stixCommon:Name>Country: Russian Federation</stixCommon:Name>
+            </incident:Victim>
+        </stix:Incident>
+    </stix:Incidents>
+</stix:STIX_Package>
+    
