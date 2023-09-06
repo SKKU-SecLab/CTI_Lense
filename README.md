@@ -13,6 +13,7 @@ You can download the STIX1 and STIX2 data from following drive page:
 https://drive.google.com/drive/folders/1X4_Ma8yMW0U-UCN5mVG4N5Z67vr0rIJk
 
 ## Installation and virtual environment setting
+
 Clone or download/unzip the source code. Then, download the STIX dataset from the URL link above and unzip file to each folder - **STIX1.zip: CTI_Lense/STIX1, STIX2.zip: CTI_Lense/STIX2**
 ```
 $ cd CTI_Lense
