@@ -22,7 +22,7 @@ Clone or download/unzip the source code. Then, generate/active python virtualenv
 $ cd CTI_Lense
 $ virtualenv -p python3 venv3
 $ . ./venv/bin/activate
-(venv3) $ pip install pymongo pandas  
+(venv3) $ pip install pymongo pandas requests cabby stix stix2 taxii2-client bs4 statsmodels
 ```
 Download the STIX dataset from the URL link above and unzip file to each folder - **STIX1.zip: `CTI_Lense/STIX1`, STIX2.zip: `CTI_Lense/STIX2`**, After you unzip the STIX dataset to each folder, you can import the STIX dataset by executing the ImportData.py.
 ```
@@ -56,3 +56,6 @@ You can check the brief analysis for Volume, Timeliness, Diversity, and Quality 
 (venv3) python Diversity.py
 (venv3) python Quality.py
 ```
+
+## Results and R script for the Figures
+We shares the results and R script that we used to draw the figures in our paper in `PaperFig-R/PaperFigs.ipynb`.
