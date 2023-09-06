@@ -12,12 +12,23 @@ You can download the STIX1 and STIX2 data from following drive page:
 
 https://drive.google.com/drive/folders/1X4_Ma8yMW0U-UCN5mVG4N5Z67vr0rIJk
 
-## Installation and virtual environment setting
-
-Clone or download/unzip the source code. Then, download the STIX dataset from the URL link above and unzip file to each folder - **STIX1.zip: CTI_Lense/STIX1, STIX2.zip: CTI_Lense/STIX2**
+## Installation and environment setting
+First, install the MongoDB.
+```
+$ sudo apt-get install mongodb
+```
+Clone or download/unzip the source code. Then, generate/active python virtualenv environment and install the requirements.
 ```
 $ cd CTI_Lense
 $ virtualenv -p python3 venv3
 $ . ./venv/bin/activate
-(venv) $ pip install 
+(venv3) $ pip install pymongo pandas  
 ```
+Download the STIX dataset from the URL link above and unzip file to each folder - **STIX1.zip: CTI_Lense/STIX1, STIX2.zip: CTI_Lense/STIX2**, After you unzip the STIX dataset to each folder, you can import the STIX dataset by executing the ImportData.py.
+```
+(venv3) python ImportData.py
+```
+
+## How to run
+
+
