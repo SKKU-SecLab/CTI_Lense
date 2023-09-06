@@ -24,11 +24,12 @@ $ virtualenv -p python3 venv3
 $ . ./venv/bin/activate
 (venv3) $ pip install pymongo pandas  
 ```
-Download the STIX dataset from the URL link above and unzip file to each folder - **STIX1.zip: CTI_Lense/STIX1, STIX2.zip: CTI_Lense/STIX2**, After you unzip the STIX dataset to each folder, you can import the STIX dataset by executing the ImportData.py.
+Download the STIX dataset from the URL link above and unzip file to each folder - **STIX1.zip: `CTI_Lense/STIX1`, STIX2.zip: `CTI_Lense/STIX2`**, After you unzip the STIX dataset to each folder, you can import the STIX dataset by executing the ImportData.py.
 ```
 (venv3) python ImportData.py
 ```
 
 ## How to run
-### adf
+### Collecting STIX data and storing data to MondoDB
+You can collect the dataset by executing the `.py` code in `CTICollecter` folder
 
