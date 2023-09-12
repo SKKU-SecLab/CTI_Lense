@@ -12,6 +12,10 @@ You can download the STIX1 and STIX2 data from following drive page:
 
 https://drive.google.com/drive/folders/1X4_Ma8yMW0U-UCN5mVG4N5Z67vr0rIJk
 
+or 
+
+https://figshare.com/articles/dataset/STIX_dataset/24126336
+
 ## Installation and environment setting
 First, install the MongoDB.
 ```
