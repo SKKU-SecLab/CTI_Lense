@@ -58,4 +58,4 @@ You can check the brief analysis for Volume, Timeliness, Diversity, and Quality 
 ```
 
 ## Results and R script for the Figures
-We shares the results and R script that we used to draw the figures in our paper in `PaperFig-R/PaperFigs.ipynb`.
+We share the results and R script that we used to draw the figures in our paper in `PaperFig-R/PaperFigs.ipynb`.
