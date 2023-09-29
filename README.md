@@ -8,7 +8,10 @@ We shares parts of the code for evaluating Volume, Timeliness, Diversity, and Qu
 We tested with Ubuntu 18.04 and Python 3.6.
 
 ## Download
-You can download the STIX1 and STIX2 data from following drive page:
+You can download the following data from the drive pages:
+* STIX dataset: STIX1.zip and STIX2.zip 
+* IOC dataset from APT reports: APT_IOC.zip
+* Scanning reports dataset from VirusTotal, HybridAnalysis, and MetaDefender: ScanningReport.zip
 
 https://drive.google.com/drive/folders/1X4_Ma8yMW0U-UCN5mVG4N5Z67vr0rIJk
 
@@ -28,7 +31,31 @@ $ virtualenv -p python3 venv3
 $ . ./venv/bin/activate
 (venv3) $ pip install pymongo pandas requests cabby stix stix2 taxii2-client bs4 statsmodels
 ```
-Download the STIX dataset from the URL link above and unzip file to each folder - **STIX1.zip: `CTI_Lense/STIX1`, STIX2.zip: `CTI_Lense/STIX2`**, After you unzip the STIX dataset to each folder, you can import the STIX dataset by executing the ImportData.py.
+Download the STIX, APT_IOC, and scanning report dataset from the URL link above and unzip file to each folder. The correct file locations and folders are as follows:
+```
+CTI_Lense/
+.
+|-- CTI_Lense.py
+|-- ImportData.py
+|-- SaveData_from_File.py
+.
+  |-- dbdata/
+  .
+    |-- STIX1/
+    .
+      |-- course_of_action.json
+      |-- exploit_target.json
+      |-- incident.json
+      |-- ...
+    |-- STIX2/
+      |-- attack-pattern.json
+      |-- campaign.json
+      |-- course-of-action.json
+      |-- ...
+    |-- 
+```
+
+After you unzip the datasets to the right place of folders, you can import the STIX dataset by executing the ImportData.py.
 ```
 (venv3) python ImportData.py
 ```
