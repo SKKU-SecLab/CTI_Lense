@@ -77,7 +77,6 @@ After you unzip the datasets to the right place of folders, you can import the S
 ```
 (venv3) python ImportData.py
 ```
-
 ## How to run
 ### Collecting STIX data and storing data to MondoDB
 We recommend you to download the STIX dataset from the drive URL link, however, you can collect the dataset by executing the `.py` code in `CTICollecter` folder and save the dataset to the database by executing the ` SaveData_from_File.py`. The sample execution command is as follows.
