@@ -6,6 +6,8 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("-e", type=str, help="You can see individual results for one of volume, diversity, timeliness, and qaulity. Please, choose one of volume, diversity, timeliness, and qaulity. If you choose none, the code will shows all results", dest="etype")
 
+    args = parser.parse_args()
+
     if args.etype:
         etype = args.etype
 
