@@ -34,15 +34,11 @@ $ . ./venv/bin/activate
 Download the STIX, APT_IOC, and scanning report dataset from the URL link above and unzip file to each folder. The correct file locations and folders are as follows:
 ```
 CTI_Lense/
-.
 |-- CTI_Lense.py
 |-- ImportData.py
 |-- SaveData_from_File.py
-.
   |-- dbdata/
-  .
     |-- STIX1/
-    .
       |-- course_of_action.json
       |-- exploit_target.json
       |-- incident.json
