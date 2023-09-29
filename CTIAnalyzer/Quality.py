@@ -50,7 +50,6 @@ class Quality:
 
 
     def table4_scanning_result(self):
-        
         stixdata = {"IPdata":43537,"Domaindata":163121,"Filedata":88470,"URIdata":377857}
         cols = ["IPdata","Domaindata","Filedata","URIdata"]
         res = {"IPdata":["43,537"],"Domaindata":["163,121"],"Filedata":["88,470"],"URIdata":["377,857"]}
@@ -148,6 +147,8 @@ class Quality:
                     mal = self.vtdb[col].count_documents(query)
 
                 res[col].append("{:.6f}".format(mal/_len))
+
+        print ("* Figure 5 - Accuracy for observable types based on each threshold t.")
         print ("="*52) 
         print ("{:10}{:>10}{:>12}{:>10}{:>10}".format(*list(["Threshold"]+list(res.keys()))))
         print ("-"*52) 
@@ -163,7 +164,7 @@ class Quality:
         aliases = json.loads(open(path+"/data/ta-alias.json").read())
         obsta = json.loads(open(path+"/data/STIXv1_IOC_TA_Map.json").read())
         obsttp = json.loads(open(path+"/data/STIXv1_IOC_TTP_Map.json").read())
-        
+        print ("* Table V - Correctly mapped STIX objects with APT reports.")
         print ("="*60)
         print ("{:20}{:15}{:>8}{:>17}".format("Indicator attr.", "Ref. object", "Overlap",  "# (%) Correct"))
         print ("-"*60)
