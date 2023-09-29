@@ -94,16 +94,58 @@ optional arguments:
 (venv3) python SaveData_from_File.py -ov1 data/STIX1/
 ```
 ### STIX data analysis
-You can check the brief analysis for Volume, Timeliness, Diversity, and Quality by executing each `.py` file. Each `.py` file shows following results:
-* `Volume.py`: The number of unique objects for each data sources.
-* `Timeliness.py`: Granger causality results for daily STIx data and security incidents.
-* `Diversity.py`: The number of data for each STIX core object.
-* `Quality.py`: The results of Improper value and Improper usage.
+You can check the brief analysis for Volume, Timeliness, Diversity, and Quality by executing the `CTI_Lense.py` file. You can get individual results for Volume, Timeliness, Diversity, and Quality with the `-e` parameter. The sample usage and result are as follows.
 ```
-(venv3) python Volume.py
-(venv3) python Timeliness.py
-(venv3) python Diversity.py
-(venv3) python Quality.py
+(venv3) python CTI_Lense.py --help
+usage: CTI_Lense.py [-h] [-e ETYPE]
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -e ETYPE    You can see individual results for one of volume, diversity,
+              timeliness, and qaulity. Please, choose one of volume,
+              diversity, timeliness, and qaulity. If you choose none, the code
+              will shows all results
+
+(venv3) python CTI_Lense.py -e diversity
+* Table III - Objects and attributes used in STIX dataset
+====================================================
+STIX version             Objects        Attributes
+----------------------------------------------------
+STIX 1                 Count   Prop.   Usage   Prop.
+----------------------------------------------------
+campaign                   0   0.00%    0/20   0.00%
+course_of_action       3,768   0.10%    5/19  26.32%
+exploit_target        10,789   0.28%    6/15  40.00%
+incident              29,086   0.75%    4/34  11.76%
+indicator          3,846,499  98.77%   13/25  52.00%
+threat_actor             719   0.02%    3/20  15.00%
+ttp                    3,734   0.10%   10/18  55.56%
+report                     0   0.00%    0/14   0.00%
+----------------------------------------------------
+STIX 2                 Count   Prop.   Usage   Prop.
+----------------------------------------------------
+attack-pattern         1,662   0.07%   12/18  66.67%
+campaign                 151   0.01%    9/20  45.00%
+course-of-action       1,181   0.05%   11/16  68.75%
+grouping                   0   0.00%    0/18   0.00%
+identity               1,110   0.04%   12/20  60.00%
+indicator          2,342,261  94.93%   18/23  78.26%
+infrastructure             0   0.00%    0/21   0.00%
+intrusion-set            211   0.01%   12/23  52.17%
+location                   1   0.00%    9/25  36.00%
+malware                2,733   0.11%   16/26  61.54%
+malware-analysis           0   0.00%    0/30   0.00%
+note                       0   0.00%    0/18   0.00%
+observed-data          5,087   0.21%   12/19  63.16%
+opinion                    0   0.00%    0/18   0.00%
+report                57,165   2.32%   14/19  73.68%
+threat-actor             723   0.03%   10/27  37.04%
+tool                     491   0.02%   11/20  55.00%
+vulnerability          5,755   0.23%   11/16  68.75%
+relationship          47,666   1.93%   12/20  60.00%
+sighting               1,273   0.05%   11/22  50.00%
+====================================================
+...
 ```
 
 ## Results and R script for the Figures
