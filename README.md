@@ -31,7 +31,7 @@ $ virtualenv -p python3 venv3
 $ . ./venv/bin/activate
 (venv3) $ pip install pymongo pandas requests cabby stix stix2 taxii2-client bs4 statsmodels
 ```
-Download the STIX, APT_IOC, and scanning report dataset from the URL link above and unzip file to each folder. The correct file locations and folders are as follows:
+Download the STIX, APT_IOC, and scanning report dataset from the URL link above and unzip file to each folder in `dbdata/` folder. The correct file locations and folders are as follows:
 ```
 CTI_Lense/
 |-- CTI_Lense.py
