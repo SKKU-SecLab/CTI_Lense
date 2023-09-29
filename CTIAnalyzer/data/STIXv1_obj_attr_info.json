@@ -1,0 +1,17 @@
+{
+  "campaign":["_id", "idref", "timestamp", "version", "title", "description", "short_description", "names", "intended_effect", "status", "related_ttps", "related_incidents", "related_indicators", "attribution", "associated_campaigns", "confidence", "activity", "information_source", "handling", "related_packages"],
+
+  "course_of_action":["_id", "idref", "timestamp", "version", "title", "stage", "type", "description", "short_description", "objective", "parameter_observables", "structured_coa", "impact", "cost", "efficacy", "information_Source", "handling", "related_COAs", "related_Packages"],
+
+  "exploit_target":["_id", "idref", "timestamp", "version", "title", "description", "short_description", "vulnerabilities", "weakness", "configuration", "potential_coas", "information_source", "handling", "related_exploit_targets", "related_packages"],
+
+  "incident":["_id", "idref", "timestamp", "url", "version", "title", "external_id", "time", "description", "short_description", "categories", "reporter", "responder", "coordinator", "victims", "affected_assets", "impact_assessment", "status", "related_indicators", "related_observables", "leveraged_ttps", "attributed_threat_actors", "intended_effect", "security_compromise", "discovery_method", "related_incidents", "coa_requested", "coa_taken", "confidence", "contact", "history", "information_source", "handling", "related_packages"],
+
+  "indicator":["_id", "idref", "timestamp", "version", "negate", "title", "indicator_types", "alternative_id", "description", "short_description", "valid_time_position", "observable", "composite_indicator_expression", "indicated_ttps", "kill_chain_phases", "test_mechanisms", "likely_impact", "suggested_coas", "handling", "confidence", "sightings", "related_indicators", "related_campaigns", "related_packages", "producer"],
+
+  "report":["_id", "idref", "timestamp", "version", "header", "observables", "indicators", "ttps", "exploit_targets", "incidents", "courses_of_action", "campaigns", "threat_actors", "related_reports"],
+
+  "threat_actor":["_id", "idref", "timestamp", "version", "title", "description", "short_description", "identity", "type", "motivation", "sophistication", "intended_effect", "planning_and_operational_support", "observed_ttps", "associated_campaigns", "associated_actors", "handling", "confidence", "information_source", "related_packages"],
+
+  "ttp":["_id", "idref", "timestamp", "version", "title", "description", "short_description", "intended_effect", "behavior", "resources", "victim_targeting", "exploit_targets", "related_ttps", "kill_chain_phases", "information_source", "kill_chains", "handling", "related_packages"]
+}

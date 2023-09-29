@@ -1,0 +1,43 @@
+{
+  "attack-pattern": ["aliases", "confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "kill_chain_phases", "labels", "lang", "modified", "name", "object_marking_refs", "revoked", "spec_version", "type"],
+
+  "campaign": ["aliases", "confidence", "created", "created_by_ref", "description", "extensions", "external_references", "first_seen", "granular_markings", "_id", "labels", "lang", "last_seen", "modified", "name", "object_marking_refs", "objective", "revoked", "spec_version", "type"],
+
+  "course-of-action": ["confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "name", "object_marking_refs", "revoked", "spec_version", "type"],
+
+  "grouping": ["confidence", "context", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "name", "object_marking_refs", "object_refs", "revoked", "spec_version", "type"],
+
+  "identity": ["confidence", "contact_information", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "identity_class", "labels", "lang", "modified", "name", "object_marking_refs", "revoked", "roles", "sectors", "spec_version", "type"],
+
+  "incident": ["confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "name", "object_marking_refs", "revoked", "spec_version", "type"],
+
+  "indicator": ["confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "indicator_types", "kill_chain_phases", "labels", "lang", "modified", "name", "object_marking_refs", "pattern", "pattern_type", "pattern_version", "revoked", "spec_version", "type", "valid_from", "valid_until"],
+
+  "infrastructure": ["aliases", "confidence", "created", "created_by_ref", "description", "extensions", "external_references", "first_seen", "granular_markings", "_id", "infrastructure_types", "kill_chain_phases", "labels", "lang", "last_seen", "modified", "name", "object_marking_refs", "revoked", "spec_version", "type"],
+
+  "intrusion-set": ["aliases", "confidence", "created", "created_by_ref", "description", "extensions", "external_references", "first_seen", "goals", "granular_markings", "_id", "labels", "lang", "last_seen", "modified", "name", "object_marking_refs", "primary_motivation", "resource_level", "revoked", "secondary_motivations", "spec_version", "type"],
+
+  "location": ["administrative_area", "city", "confidence", "country", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "latitude", "longitude", "modified", "name", "object_marking_refs", "postal_code", "precision", "region", "revoked", "spec_version", "street_address", "type"],
+
+  "malware-analysis": ["analysis_definition_version", "analysis_ended", "analysis_engine_version", "analysis_sco_refs", "analysis_started", "confidence", "configuration_version", "created", "created_by_ref", "extensions", "external_references", "granular_markings", "host_vm_ref", "_id", "installed_software_refs", "labels", "lang", "modified", "modules", "object_marking_refs", "operating_system_ref", "product", "result", "result_name", "revoked", "sample_ref", "spec_version", "submitted", "type", "version"],
+
+  "malware": ["aliases", "architecture_execution_envs", "capabilities", "confidence", "created", "created_by_ref", "description", "extensions", "external_references", "first_seen", "granular_markings", "_id", "implementation_languages", "kill_chain_phases", "labels", "lang", "last_seen", "malware_types", "modified", "name", "object_marking_refs", "operating_system_refs", "revoked", "sample_refs", "spec_version", "type"],
+
+  "note": ["abstract", "authors", "confidence", "content", "created", "created_by_ref", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "object_marking_refs", "object_refs", "revoked", "spec_version", "type"],
+
+  "observed-data": ["confidence", "created", "created_by_ref", "extensions", "external_references", "first_observed", "granular_markings", "_id", "labels", "lang", "last_observed", "modified", "number_observed", "object_marking_refs", "object_refs", "objects", "revoked", "spec_version", "type"],
+
+  "opinion": ["authors", "confidence", "created", "created_by_ref", "explanation", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "object_marking_refs", "object_refs", "opinion", "revoked", "spec_version", "type"],
+
+  "report": ["confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "name", "object_marking_refs", "object_refs", "published", "report_types", "revoked", "spec_version", "type"],
+
+  "threat-actor": ["aliases", "confidence", "created", "created_by_ref", "description", "extensions", "external_references", "first_seen", "goals", "granular_markings", "_id", "labels", "lang", "last_seen", "modified", "name", "object_marking_refs", "personal_motivations", "primary_motivation", "resource_level", "revoked", "roles", "secondary_motivations", "sophistication", "spec_version", "threat_actor_types", "type"],
+
+  "tool": ["aliases", "confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "kill_chain_phases", "labels", "lang", "modified", "name", "object_marking_refs", "revoked", "spec_version", "tool_types", "tool_version", "type"],
+
+  "vulnerability": ["confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "name", "object_marking_refs", "revoked", "spec_version", "type"],
+
+  "sighting": ["confidence", "count", "created", "created_by_ref", "description", "extensions", "external_references", "first_seen", "granular_markings", "_id", "labels", "lang", "last_seen", "modified", "object_marking_refs", "observed_data_refs", "revoked", "sighting_of_ref", "spec_version", "summary", "type", "where_sighted_refs"],
+
+  "relationship": ["confidence", "created", "created_by_ref", "description", "extensions", "external_references", "granular_markings", "_id", "labels", "lang", "modified", "object_marking_refs", "relationship_type", "revoked", "source_ref", "spec_version", "start_time", "stop_time", "target_ref", "type"]
+}
