@@ -37,18 +37,40 @@ CTI_Lense/
 |-- CTI_Lense.py
 |-- ImportData.py
 |-- SaveData_from_File.py
-  |-- dbdata/
-    |-- STIX1/
+|-- dbdata/
+   |-- STIX1/
       |-- course_of_action.json
       |-- exploit_target.json
       |-- incident.json
       |-- ...
-    |-- STIX2/
+   |-- STIX2/
       |-- attack-pattern.json
       |-- campaign.json
       |-- course-of-action.json
       |-- ...
-    |-- 
+   |-- APT_IOC/
+      |-- domain.json
+      |-- hash.json
+      |-- ip.json
+      |-- uri.json
+   |-- ScanReport/
+      |-- HybridAnalysis/
+         | -- Domaindata.json
+         | -- Filedata.json
+         | -- IPdata.json
+         | -- URIdata.json
+      |-- MetaDefender/
+         | -- Domaindata.json
+         | -- Filedata.json
+         | -- IPdata.json
+         | -- URIdata.json
+      |-- VirusTotal/
+         | -- Domaindata.json
+         | -- Filedata.json
+         | -- IPdata.json
+         | -- URIdata.json
+|-- ...
+
 ```
 
 After you unzip the datasets to the right place of folders, you can import the STIX dataset by executing the ImportData.py.
