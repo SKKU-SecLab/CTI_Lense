@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     host = "localhost"
     port = 27017
-    dbname1 = "STIX1"
+    dbname1 = "STIX1_test"
     dbname2 = "STIX2"
 
     conn = MongoClient(host=host,port=port)

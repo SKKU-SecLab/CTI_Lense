@@ -14,17 +14,12 @@ import pytz
 import time
 import math
 
-# import nltk
-# nltk.download('stopwords')
-
-# from nltk.corpus import stopwords
-
 class DBMv1:
-    def __init__(self, host, port, db):
-        core_objs = ['indicator', 'course_of_action', 'incident', 'campaign', 'ttp', 'threat_actor', 'report', 'exploit_target']
+    def __init__(self, host, port, db, path):
+        self.core_obj_attr = json.loads(open(path+"/data/STIXv1_obj_attr_info.json").read())
+        self.objs = ['campaign', 'course_of_action', 'exploit_target','incident', 'indicator', 'threat_actor','ttp', 'report']
         self.conn = MongoClient(host=host,port=port)
         self.db = self.conn[db]
-        self.objs = [obj for obj in Database(self.conn,db).list_collection_names() if obj in core_objs]
         self.src = ["AlienVault","HailaTAXII","IBMxForce_pub","PickupTAXII"]
 
     def GetCollection(self, collection, query={}):
@@ -33,7 +28,27 @@ class DBMv1:
     def ObjCnt(self):
         return dict([(obj,self.db[obj].count_documents({})) for obj in self.objs])
 
-    def ObjAttrCnt(self):
+    def ObjAttrCov(self):
+        res = {}
+        for obj, attrs in self.core_obj_attr.items():
+            cov = 0
+            for attr in attrs:
+                if self.db[obj].find_one({attr:{"$exists":True}}):
+                    cov += 1
+            res[obj] = (cov,len(attrs))
+        return res  
+
+    def ObjAttrCnt(self,obj=None):
+        if obj:
+            res = dict([(attr,0) for attr in self.core_obj_attr[obj]])
+            data = self.GetCollection(obj)
+            for d in data:
+                for key in d.keys():
+                    if key in self.core_obj_attr[obj]:
+                        res[key] += 1
+
+            return dict(sorted([(k,v) for k,v in res.items()], key = lambda x: x[1], reverse=True))
+
         res = dict([(obj,{}) for obj in self.objs])
 
         for obj,value in res.items():
@@ -44,7 +59,7 @@ class DBMv1:
                         res[obj][key] = 0
                     res[obj][key] += 1
         
-        return res
+        return res 
 
     def SrcObjCnt(self):
         res = dict([(source,{}) for source in self.src]) 
@@ -83,14 +98,14 @@ class DBMv1:
 
         
 class DBMv2:
-    def __init__(self, host, port, db):
+    def __init__(self, host, port, db, path):
         self.conn = MongoClient(host=host,port=port)
         self.db = self.conn[db]
-        self.objs = ["attack-pattern", "campaign", "course-of-action",
-                "identity","indicator", "intrusion-set", "location", "malware",
-                "observed-data", "relationship", "report", "sighting",
-                "threat-actor", "tool", "vulnerability"]
-
+        self.core_obj_attr = json.loads(open(path+"/data/STIXv2_obj_attr_info.json").read())
+        self.objs = ["attack-pattern", "campaign", "course-of-action", "grouping",
+                "identity", "indicator", "infrastructure", "intrusion-set", "location", 
+                "malware", "malware-analysis", "note", "observed-data", "opinion",  
+                "report", "threat-actor", "tool","vulnerability","relationship", "sighting"]
         self.src = ["AlienVault","JamesBrine", "DigitalSide", "Cyware",
                 "IBMxForce_pub", "Unit42", "MitreAttack","LimoAnomali","PickupSTIX"]
  
@@ -100,8 +115,29 @@ class DBMv2:
 
     def ObjCnt(self):
         return dict([(obj,self.db[obj].count_documents({})) for obj in self.objs])
-    
-    def ObjAttrCnt(self):
+
+
+    def ObjAttrCov(self):
+        res = {}
+        for obj, attrs in self.core_obj_attr.items():
+            cov = 0
+            for attr in attrs:
+                if self.db[obj].find_one({attr:{"$exists":True}}):
+                    cov += 1
+            res[obj] = (cov,len(attrs))
+        return res
+
+    def ObjAttrCnt(self, obj=None):
+        if obj:
+            res = dict([(attr,0) for attr in self.core_obj_attr[obj]])
+            data = self.GetCollection(obj)
+            for d in data:
+                for key in d.keys():
+                    if key in self.core_obj_attr[obj]:
+                        res[key] += 1
+
+            return dict(sorted([(k,v) for k,v in res.items()], key = lambda x: x[1], reverse=True))
+
         res = dict([(obj,{}) for obj in self.objs])
         # print (res)
         for obj,value in res.items():
