@@ -4,10 +4,35 @@ This research artifact is aimed to provide the source code of CTI-Lense, a frame
 
 We shares parts of the code for evaluating Volume, Timeliness, Diversity, and Quality, and all STIX dataset we collected.
 
+# How to use
+
+## Directly use our docker image. (Recommended)
+
+```
+$ sudo apt-get install docker.io
+$ sudo docker pull jinbumjin/cti-lense:artifact
+$ sudo docker run -it jinbumjin/cti-lense:artifact /bin/bash
+```
+
+## How to run (Recommended)
+First, start the MongoDB service in the docker container. It takes up to 10 minutes to enable the MongoDB service. 
+```
+/CTI_Lense# service mongodb start
+```
+
+Then, to get our experimental results, simply run CTI_Lense.py code with the following commands in the docker container:
+```
+/CTI_Lense# python3 CTI_Lense.py -e timeliness
+/CTI_Lense# python3 CTI_Lense.py -e diversity
+/CTI_Lense# python3 CTI_Lense.py -e quality
+```
+
+## Manual environment setting
+
 ### Environment
 We tested with Ubuntu 18.04 and Python 3.6.
 
-## Download
+### Download
 You can download the following data from the drive pages:
 * STIX dataset: STIX1.zip and STIX2.zip 
 * IOC dataset from APT reports: APT_IOC.zip
@@ -19,7 +44,7 @@ or
 
 https://figshare.com/articles/dataset/STIX_dataset/24126336
 
-## Installation and environment setting
+### Installation and environment setting
 First, install the MongoDB.
 ```
 $ sudo apt-get install mongodb
@@ -92,7 +117,7 @@ optional arguments:
 (venv3) python Collection/TAXIIv1.py -s 2023-01-01 -e 2023-01-03 -o data/STIX1
 (venv3) python SaveData_from_File.py -ov1 data/STIX1/
 ```
-### STIX data analysis
+## STIX data analysis results
 You can check the brief analysis for Volume, Timeliness, Diversity, and Quality by executing the `CTI_Lense.py` file. You can get individual results for Volume, Timeliness, Diversity, and Quality with the `-e` parameter. The sample usage and result are as follows.
 ```
 (venv3) python CTI_Lense.py --help
