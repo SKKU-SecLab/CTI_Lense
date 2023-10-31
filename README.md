@@ -4,7 +4,7 @@ This research artifact is aimed to provide the source code of CTI-Lense, a frame
 
 We shares parts of the code for evaluating Volume, Timeliness, Diversity, and Quality, and all STIX dataset we collected.
 
-# How we build the docker image
+# How we built the docker image
 
 First, download the code and set the `CTI_Lense` folder and `Dockerfile` file with following path. Then, build/run the docker imamge and Enable the MongoDB service in the docker container.
 
