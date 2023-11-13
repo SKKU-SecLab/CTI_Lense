@@ -1,4 +1,4 @@
-# CTI_Lense - NDSS 2024 submission
+# CTI_Lense - NDSS 2024 Artifact
 
 This research artifact is aimed to provide the source code of CTI-Lense, a framework that collates STIX data from a set of open CTI sources and systematically analyzes the collected data, as well as the dataset of various CTI sources.
 
