@@ -134,7 +134,7 @@ optional arguments:
 (venv3) python Collection/TAXIIv1.py -s 2023-01-01 -e 2023-01-03 -o data/STIX1
 (venv3) python SaveData_from_File.py -ov1 data/STIX1/
 ```
-<a name="result"></a>
+<a name="results"></a>
 ### 5. STIX data analysis results
 You can check the brief analysis for Volume, Timeliness, Diversity, and Quality by executing the `CTI_Lense.py` file. You can get individual results for Volume, Timeliness, Diversity, and Quality with the `-e` parameter. The sample usage and result are as follows.
 ```
