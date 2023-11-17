@@ -9,6 +9,7 @@ import os
 
 path = os.path.dirname(os.path.abspath(__file__))
 
+# Function to identify valid Threat actor based on a list of related keywords
 def ValidTA(db, talist, mallist):
     col = "threat-actor"
     res = {}
@@ -27,11 +28,13 @@ def ValidTA(db, talist, mallist):
 
     return validTA
 
+# Function to retrieve Threat actor information mentioned in the 'stix_header' collection based on a description query
 def getTAinDesc(dbdup, talist):
     col = "report"
     talist.remove("st")
     talist.remove("lead")
-
+    
+    # Query for finding report objects with Threat actor information in invalid object with description.
     query = {
         "description":{"$regex":"(?i)("+"|".join(talist)+")"}
     }
@@ -40,6 +43,7 @@ def getTAinDesc(dbdup, talist):
     cnt = 0
     cnt_taobj = 0
 
+    # Counting the number of Indicator objects with threat actor information in description attribute in report objects.
     for rep in TAinDes:
         ck = 0
     
@@ -91,9 +95,10 @@ def getTAinDescSrc(dbdup, talist):
         print (cnt)
         print (cnt_taobj)
 
+# Function to get valid threat actor IDs based on a list of related keywords
 def getValidTAid(dbdup, talist):
     col = "threat-actor"
-    
+    # Query for counting the number of Inidcator objects with Threat actor information in valid object with Threat actor objects.
     query = {
         "name": {"$regex":"(?i)("+"|".join(talist)+")"}
     }
@@ -102,9 +107,10 @@ def getValidTAid(dbdup, talist):
 
     return list(validTAid)
 
+# Function to get Indicator objects with valid threat actor IDs.
 def getIndc(db, validTAids):
     col = "indicator"
-
+    # Query for counting the number of Inidcator objects with valid Threat actor IDs information 
     query = {
         "taID":{"$in":validTAids}
     }
@@ -116,9 +122,6 @@ def getIndc(db, validTAids):
 def getIndcSrc(db, validTAids):
     col = "indicator"
 
-    # validTAids = open("objids/validtaids_v2.txt").read().split("\n")[:-1]
-    # taindescids = [int(i) for i in open("objids/taindesc.txt").read().split("\n")[:-1]]
-    
     srclist = db[col].distinct("source")
 
     for src in srclist:
@@ -141,10 +144,12 @@ def run():
     conn = MongoClient(host=host,port=port)
     db = conn[dbname]
 
+    # Get the keywords for Threat actor
     talist = open(path+"/dictionary/TAList.txt").read().split("\n")[:-1]
 
     sttalist  = []
 
+    # Set additional frequently used Threat actor naming convention.
     for ta in talist:
         sttalist.append(ta)
         if " " in ta:
@@ -163,9 +168,9 @@ def run():
 
     validTA = ValidTA(db,sttalist,[])
 
+    # Count the number of Indicator objects with proper and improper usage.
     sttalist = list(set(sttalist))
     validta = getValidTAid(db,validTA)
-    
-#     print ("* Indicators representing threat actor")
+ 
     return getTAinDesc(db, sttalist), getIndc(db, validta)
 

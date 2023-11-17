@@ -6,27 +6,33 @@ from pymongo.database import Database
 
 import json
 
+# Function to retrieve Attack Patterns (AP) mentioned in the 'stix_header' collection based on a description query
 def getAPinDesc(dbdup):
     col = "stix_header"
 
+    # MongoDB query to find documents in 'stix_header' collection where description contains keywords related to attack patterns
     query = {
         "description":{"$regex":"(?i)(url|email|e-mail)"}
     }
-    APinDes = dbdup[col].distinct("_id", query)
 
+    # Find distinct "_id" values that satisfy the query
+    APinDes = dbdup[col].distinct("_id", query)
 
     return list(APinDes)
 
+# Function to retrieve indicators with valid Attack Patterns
 def getIndc(db, validTAids, taindescids):
+
     col = "indicator"
 
-    
+    # Define query for count the number of Indicator objects that contains attack pattern in stix_header description.
     query = {
         "hid":{"$in":taindescids}
     }
 
     taindesc = db[col].count_documents(query)
 
+    # Define query for count the number of Indicator objects that contains attack pattern in valid object (TTP).
     query = {
         "indicated_ttps.ttp.idref":{"$in":validTAids}
     }
@@ -39,16 +45,13 @@ def getIndc(db, validTAids, taindescids):
             {"indicated_ttps.ttp.idref":{"$in":validTAids}}
         ]
     }
-
+    
+    # Count the number of common Incidator object between proper and improper usage
     common = db[col].count_documents(query)
     
-    # print ("* Indicators representing attack pattern")
-    # print ("Using description:", taindesc)
-    # print ("Using object/attribute:", validTA - common)
-
     return taindesc,validTA-common
-#     print ("Common objects", common)
 
+# Function to retrieve indicators with valid Attack Patterns for each source
 def getIndcSrc(db, validTAids, taindescids):
     col = "indicator"
     

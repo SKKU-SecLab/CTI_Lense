@@ -9,11 +9,13 @@ import os
 
 path = os.path.dirname(os.path.abspath(__file__))
 
+# Function to retrieve Malware instances in Malware objects mentioned in the 'report' collection based on a description query in STIX 2.
 def getMALinDesc(dbdup, mallist):
     col = "report"
     lenlist = len(mallist)
     
     res = []
+    # MongoDB query to find documents in the 'report' collection where the description contains keywords related to malware
     query = {
         "description":{"$regex":"(?i)("+"|".join(mallist[:int(lenlist/2)])+")"}
     }
@@ -25,7 +27,6 @@ def getMALinDesc(dbdup, mallist):
         for obj in rep["object_refs"]:
             if "indicator" in obj:
                 res.append(obj)
-#                 cnt+=1
 
     query = {
         "description":{"$regex":"(?i)("+"|".join(mallist[int(lenlist/2):])+")"}
@@ -37,7 +38,6 @@ def getMALinDesc(dbdup, mallist):
         for obj in rep["object_refs"]:
             if "indicator" in obj:
                 res.append(obj)
-#                 cnt+=1
 
     
     return len(set(res))
@@ -86,6 +86,7 @@ def getValidMAL(db, mallist):
     cnt = 0
     res = []
 
+    # Query to count the number of Indicator objects with valid objects/attributes (label).
     query = {
         "labels":{"$regex":"(?i)("+"|".join(mallist[:int(lenlist/2)])+")"}
     }
@@ -140,10 +141,12 @@ def run():
     conn = MongoClient(host=host,port=port)
     db = conn[dbname]
 
+    # Get the keywords for Malware instances
     mallist = open(path+"/dictionary/MALlist.txt").read().split("\n")[:-1]
 
-
     stmallist = []
+
+    # Set additional frequently used malware information.
     endwith_keyword = [" rat", " stealer", " ransom", " ransomware", " trojan",
                    " botnet", " pos", " downloader", " locker", " rootkit",
                    " worm", " logger", " keylogger", " clipper", " backdoor",
@@ -152,6 +155,7 @@ def run():
                        "trojan.", "elf.", "android/", "mal/", "osx/",
                        "androidos/"]
 
+    # set the final malware instance ketwords
     for mal in mallist:
         stmallist.append(mal)
         for key in endwith_keyword:
@@ -166,8 +170,5 @@ def run():
     
     _stmallist = [mal for mal in stmallist if len(mal) > 3]
 
-    # print ("* Indicators representing Malware")
-    # print ("Using description:", getMALinDesc(db, _stmallist))
-    # print ("Using object/attribute:", getValidMAL(db, _stmallist))
-    
+    # Count and return the number of Indicator objects with proper and improper usage.
     return getMALinDesc(db, _stmallist), getValidMAL(db, _stmallist)

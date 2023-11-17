@@ -9,6 +9,7 @@ import os
 
 path = os.path.dirname(os.path.abspath(__file__))
 
+# Function to identify valid Threat actor based on a list of threat actor related keywords
 def ValidTA(db, talist, mallist):
     col = "threat_actor"
     res = {}
@@ -27,14 +28,16 @@ def ValidTA(db, talist, mallist):
 
     return validTA
 
+# Function to retrieve Threat actor mentioned in the 'stix_header' collection based on a description query
 def getTAinDesc(dbdup, talist):
     col = "stix_header"
-    # talist.remove("")
+    # remove remaining invalid keywords
     talist.remove("st")
     talist.remove("lead")
+
+    # MongoDB query to find documents in the 'stix_header' collection where the description contains keywords related to threat actor
     query = {
         "title":{"$regex":"(?i)("+"|".join(talist)+")"}
-        # {"description":{"$regex":"(?i)("+"|".join(talist)+")"}}
     }
     TAinDes = dbdup[col].distinct("_id", query)
     
@@ -56,22 +59,26 @@ def getValidTAid(db, talist):
 
 def getIndc(db):
     col = "indicator"
-
+    
+    # Get Valid TA list
     validTAids = open(path+"/objids/validtaids_2.txt").read().split("\n")[:-1]
     taindescids = [int(i) for i in open(path+"/objids/taindesc_2.txt").read().split("\n")[:-1]]
     
+    # Query for counting the number of Inidcator objects with Threat actor information in invalid object with description in stix_header object.
     query = {
         "hid":{"$in":taindescids}
     }
 
     taindesc = db[col].count_documents(query)
-
+    
+    # Query for counting the number of Inidcator objects with Threat actor information in valid object with TTP objects.
     query = {
         "taID":{"$in":validTAids}
     }
 
     validTA = db[col].count_documents(query)
 
+    # Query for counting the number of common objects
     query = {
         "$and":[
             {"hid":{"$in":taindescids}},
@@ -81,12 +88,7 @@ def getIndc(db):
 
     common = db[col].count_documents(query)
 
-    # print ("* Indicators representing threat actor")
-    # print ("Using description:", taindesc)
-    # print ("Using object/attribute:", validTA - common)
-
     return taindesc, validTA - common
-#     print ("Common objects", common)
 
 
 def getIndcSrc(db):
