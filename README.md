@@ -11,7 +11,7 @@ In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2
 
 # How we built the docker image
 
-First, download the code and set the `CTI_Lense` folder and `Dockerfile` file with following path. Then, build/run the docker imamge and Enable the MongoDB service in the docker container.
+First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' as shown below. Then, build and run the Docker image, and enable the MongoDB service within the Docker container.
 
 ```
 $ ls
@@ -22,7 +22,8 @@ $ sudo docker run -it ctilense:1.0 /bin/bash
 /CTI_Lense# service mongodb start
 ```
 
-Second, you have to follow the **Manual environment setting**, which downloads the datasets and import the dataset in MongoDB, except the installation of depedencies (apt-get and pip). Then, commit the new image container in the host.
+Second, you must follow the **Manual environment setting** steps. This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
+
 ```
 $ sudo docker ps
 CONTAINER ID   IMAGE		...
