@@ -4,7 +4,7 @@ This research artifact is aimed to provide the source code of CTI-Lense, a frame
 
 We shares parts of the code for evaluating Volume, Timeliness, Diversity, and Quality, and all STIX dataset we collected.
 
-The design and evaluation of CTI-Lense is detailed in our [NDSS 2024 paper](https://seclab.skku.edu/full-publications/).
+The design and evaluation of CTI-Lense is detailed in our [NDSS 2024 paper](https://seclab.skku.edu/wp-content/uploads/2023/11/SharingCTI.pdf) (preprint version).
 
 # How we built the docker image
 
