@@ -6,6 +6,10 @@ We shares parts of the code for evaluating Volume, Timeliness, Diversity, and Qu
 
 The design and evaluation of CTI-Lense is detailed in our [NDSS 2024 paper](https://seclab.skku.edu/wp-content/uploads/2023/11/SharingCTI.pdf) (preprint version).
 
+> Beomjin Jin, Eunsoo Kim, Hyunwoo Lee, Elisa Bertino, Doowon Kim, and Hyoungshick Kim. <br>
+Sharing cyber threat intelligence: Does it really help? <br>
+In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2024.
+
 # How we built the docker image
 
 First, download the code and set the `CTI_Lense` folder and `Dockerfile` file with following path. Then, build/run the docker imamge and Enable the MongoDB service in the docker container.
