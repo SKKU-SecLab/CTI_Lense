@@ -13,6 +13,7 @@ def find_files(directory, pattern):
                 filename = os.path.join(root, basename)
                 yield filename
 
+# Function for finding all STIX document files.
 def find_all_files(path):
     res = []
     for filename in find_files(path,"*.json"):
@@ -20,7 +21,7 @@ def find_all_files(path):
 
     return res
 
-
+# Function for saving one object in STIX 2
 def SaveObj(db,Objlist,source,taID,incidID):
     # collection = db["indicators"]
     for obj in Objlist:
@@ -40,7 +41,7 @@ def SaveObj(db,Objlist,source,taID,incidID):
             with open("error_save_obj.log","a") as wf:
                 wf.write("STIXv2_"+ source+"_"+_obj["_id"]+"\n")
         
-
+# Function for saving all types of objects in STIX 1
 def SaveAll(db, path):
     flist =  sorted(find_all_files(path))
     taID = ""

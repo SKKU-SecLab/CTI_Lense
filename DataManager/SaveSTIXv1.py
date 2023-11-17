@@ -7,7 +7,7 @@ from stix.core import STIXPackage
 from pymongo.errors import DuplicateKeyError
 from pymongo.database import Database
 
-
+# Function for finding STIX document files.
 def find_files(directory, pattern):
     for root, dirs, files in os.walk(directory):
         for basename in files:
@@ -15,6 +15,7 @@ def find_files(directory, pattern):
                 filename = os.path.join(root, basename)
                 yield filename
 
+# Function for finding all STIX document files.
 def find_all_files(path, pattern):
     res = []
     for filename in find_files(path,pattern):
@@ -22,7 +23,7 @@ def find_all_files(path, pattern):
 
     return res
 
-
+# Function for saving the Indicator objects in STIX 1
 def SaveIndc(db,IndcList,source,taID,incidID,hid):
     collection = db["indicator"]
     for indc in IndcList:
@@ -49,6 +50,7 @@ def SaveIndc(db,IndcList,source,taID,incidID,hid):
             with open("error.log","a") as wf:
                 wf.write(source+"_indicators\n")
 
+# Function for saving the Observable attributes in Indicator objects in STIX 1
 def SaveObs(db,ObsList,source,taID,incidID,hid):
     collection = db["observable"]
     for obs in ObsList:
@@ -68,7 +70,7 @@ def SaveObs(db,ObsList,source,taID,incidID,hid):
             with open("error.log","a") as wf:
                 wf.write(source+"_observables\n")
 
-
+# Function for saving the TTP objects in STIX 1
 def Savettps(db,ttpList,source,taID,incidID,hid):
     collection = db["ttp"]
     for ttp in ttpList:
@@ -88,7 +90,7 @@ def Savettps(db,ttpList,source,taID,incidID,hid):
             with open("error.log","a") as wf:
                 wf.write(source+"_ttps\n")
 
-
+# Function for saving the Threat actor objects in STIX 1
 def SaveTA(db,TAList,source,hid):
     collection = db["threat_actor"]
     for ta in TAList:
@@ -107,7 +109,7 @@ def SaveTA(db,TAList,source,hid):
             with open("error.log","a") as wf:
                 wf.write(source+"_threat_actors\n")
 
-
+# Function for saving the Incident objects in STIX 1
 def SaveIncid(db,IncidList,source,hid):
     collection = db["incident"]
     for incid in IncidList:
@@ -127,6 +129,7 @@ def SaveIncid(db,IncidList,source,hid):
             with open("error.log","a") as wf:
                 wf.write(source+"_incidents\n")
 
+# Function for saving the Exploit target objects in STIX 1
 def SaveExpT(db,ExpTList,source,taID,incidID,hid):
     collection = db["exploit_target"]
     for expt in ExpTList:
@@ -152,7 +155,7 @@ def SaveExpT(db,ExpTList,source,taID,incidID,hid):
             with open("error.log","a") as wf:
                 wf.write(source+"_exploit_targets\n")
         
-
+# Function for saving the Course of action objects in STIX 1
 def SaveCOAs(db,COAList,source,taID,incidID,hid):
     collection = db["course_of_action"]
     for coa in COAList:
@@ -174,6 +177,7 @@ def SaveCOAs(db,COAList,source,taID,incidID,hid):
             with open("error.log","a") as wf:
                 wf.write(source+"_course_of_actions\n")
 
+# Function for saving the stix_header objects in STIX 1
 def SaveSTIXHeader(db,header,source,taID,incidID,hid):
     collection = db["stix_header"]
     _h = dict(header)
@@ -193,7 +197,7 @@ def SaveSTIXHeader(db,header,source,taID,incidID,hid):
         with open("error.log","a") as wf:
             wf.write(source+"_stix_header\n")
        
-
+# Function for finding the stix_header objects ID in STIX 1
 def findHID(db,header):
     name = "stix_header"
     if "description" in header.keys():
@@ -211,7 +215,7 @@ def findHID(db,header):
     
     return db[name].count_documents({})+1
 
-
+# Function for saving one object with different types in STIX 1
 def SaveObj(db,STIXData,source):
     taID = ""
     incidID = ""
@@ -240,6 +244,7 @@ def SaveObj(db,STIXData,source):
         elif skey == "exploit_targets":
             SaveExpT(db, sdata, source, taID, incidID, hid)
 
+# Function for saving all types of objects in STIX 1
 def SaveAll(db,path):
     stix_v1_data = sorted(find_all_files(path, "*.xml"))
 

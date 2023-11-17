@@ -6,10 +6,11 @@ from pymongo.database import Database
 
 import json
 
+# Function to retrieve valid Target infromation.
 def ValidMAL(db):
     col = "ttp"
     res = {}
-
+    
     stixmal = [d.lower() for d in db[col].distinct("victim_targeting.identity.name")]
 
     return list(stixmal)
@@ -27,35 +28,39 @@ def getAPinDesc(db):
 
     return list(APinDes)
 
+# Function to retrieve TTP IDs with valid Target infromation.
 def getValidMALid(db):
     col = "ttp"
     
+    # Get valid Target information list
     mallist = ValidMAL(db)
-
+    
+    # Query for finding the TTP IDs with valid Target information list
     query = {
         "victim_targeting.identity.name": {"$regex":"(?i)("+"|".join(mallist)+")"}
     }
 
     validMALid = list(db[col].distinct("_id", query))
 
-    # print (validMALid)
     return validMALid
 
 def getIndc(db, validTAids, taindescids):
     col = "indicator"
-
+    # Query for counting the number of Inidcator objects with Target information in invalid object with description in stix_header object.
     query = {
         "hid":{"$in":taindescids}
     }
 
     taindesc = db[col].count_documents(query)
 
+    # Query for counting the number of Inidcator objects with Target information in valid object with TTP objects.
     query = {
         "indicated_ttps.ttp.idref":{"$in":validTAids}
     }
 
     validTA = db[col].count_documents(query)
-
+    
+    # Query for counting the common objects
     query = {
         "$and":[
             {"hid":{"$in":taindescids}},
@@ -64,10 +69,6 @@ def getIndc(db, validTAids, taindescids):
     }
 
     common = db[col].count_documents(query)
-
-#     print ("* Indicators representing target information")
-#     print ("Using description:", taindesc)
-#     print ("Using object/attribute:", validTA - common)
 
     return taindesc, validTA-common
 
