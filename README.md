@@ -3,7 +3,7 @@
 Welcome to the GitHub-repository for CTI-Lense. This repository hosts the artifacts for CTI-Lense, a framework dedicated to cyber threat intelligence (CTI) analysis. Here are what you will find in this repository:
 
 - **STIX Dataset:** Access our extensive dataset of STIX data we used for our analysis.
-- **Source Code & docker image:** Get the CTI-Lense framework's source code and docker image for collecting and processing of STIX data from various open CTI sources. The code for replicating our research results (**Volumne**, **Timeliness**, and **Quality**) are also included.
+- **Source Code & Docker image:** Get the CTI-Lense framework's source code and Docker image for collecting and processing of STIX data from various open CTI sources. The code for replicating our research results (**Volume**, **Timeliness**, and **Quality**) are also included.
 - **Research paper:** Take a look at the design and evaluation results of CTI-Lense, which are detailed in our [NDSS 2024 paper](https://seclab.skku.edu/wp-content/uploads/2023/11/SharingCTI.pdf) (preprint version without author information). The authors and their affiliation information are as follows.
 > Beomjin Jin, Eunsoo Kim, Hyunwoo Lee, Elisa Bertino, Doowon Kim, and Hyoungshick Kim. <br>
 Sharing cyber threat intelligence: Does it really help? <br>
@@ -11,36 +11,36 @@ In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2
 
 # How to use
 There are two ways to replicate our analysis result:
-- [Step 1](#step1). **(Recommended)** Simply use our docker image and run (How to get the results and figures are explained [here](#results) )
+- [Step 1](#step1). **(Recommended)** Simply use our Docker image and run (How to get the results and figures are explained [here](#results) )
 - [Step 2](#step2). **(Optional)** Set the analysis environment manually from scratch.
-- [Optinal step](#optional). **(Optional)** This step is provided in case you are curious about how we built the docker image.
+- [Optional step](#optional). **(Optional)** This step is provided in case you are curious about how we built the Docker image.
 
 <a name="step1"></a>
-## Step 1. Directly using our docker image (Recommended)
+## Step 1. Directly using our Docker image (Recommended)
 The step is recommended if you want to replicate our analysis result without having to set the analysis environment manually.
 
-### 1. Pull the docker image
+### 1. Pull the Docker image
 
 ```
-$ sudo apt-get install docker.io
-$ sudo docker pull jinbumjin/cti-lenseps:artifact
-$ sudo docker run -it jinbumjin/cti-lense:artifact /bin/bash
+$ sudo apt-get install Docker.io
+$ sudo Docker pull jinbumjin/cti-lenseps:artifact
+$ sudo Docker run -it jinbumjin/cti-lense:artifact /bin/bash
 ```
 
 ### 2. How to run
-First, start the MongoDB service in the docker container. It takes up to 10 minutes to enable the MongoDB service. 
+First, start the MongoDB service in the Docker container. It takes up to 10 minutes to enable the MongoDB service. 
 ```
 /CTI_Lense# service mongodb start
 ```
 
-Then, to get our experimental results, simply run CTI_Lense.py code with the following commands in the docker container:
+Then, to get our experimental results, simply run CTI_Lense.py code with the following commands in the Docker container:
 ```
 /CTI_Lense# python3 CTI_Lense.py -e timeliness
 /CTI_Lense# python3 CTI_Lense.py -e diversity
 /CTI_Lense# python3 CTI_Lense.py -e quality
 ```
 
-If you wish to know more about how we built the docker image, you can follow descriptions in the [Optinal step](#optional)
+If you wish to know more about how we built the Docker image, you can follow descriptions in the [Optinal step](#optional)
 
 <a name="step2"></a>
 ## Step 2. Manual environment setting (Optional)
@@ -191,25 +191,25 @@ sighting               1,273   0.05%   11/22  50.00%
 We share the results and R script that we used to draw the figures in our paper in `PaperFig-R/PaperFigs.ipynb`.
 
 <a name="optional"></a>
-## (Optional step) How we built the docker image
-(This part is strictly optional, only follow below steps if you want to build the docker image yourself.)
+## (Optional step) How we built the Docker image
+(This part is strictly optional, only follow below steps if you want to build the Docker image yourself.)
 First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' as shown below. Then, build and run the Docker image, and enable the MongoDB service within the Docker container.
 
 ```
 $ ls
 CTI_Lense   Dockerfile
 
-$ sudo docker build -t ctilense:1.0 .
-$ sudo docker run -it ctilense:1.0 /bin/bash
+$ sudo Docker build -t ctilense:1.0 .
+$ sudo Docker run -it ctilense:1.0 /bin/bash
 /CTI_Lense# service mongodb start
 ```
 
-Second, you must follow the **Manual environment setting** [step](#step2). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
+Second, you must follow the **Manual environment setting** [step](#step2). This involves downloading the datasets and importing them into MongoDB, except the installation of dependencies (apt-get and pip). Afterwards, commit the new container image to the host.
 
 ```
-$ sudo docker ps
+$ sudo Docker ps
 CONTAINER ID   IMAGE		...
 ed4094713497   ctilense:1.0	...
 
-$ sudo docker commit ed4094713497 ctilense:1.1
+$ sudo Docker commit ed4094713497 ctilense:1.1
 ```
