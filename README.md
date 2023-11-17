@@ -23,8 +23,8 @@ The step is recommended if you want to replicate our analysis result without hav
 
 ```
 $ sudo apt-get install Docker.io
-$ sudo Docker pull jinbumjin/cti-lenseps:artifact
-$ sudo Docker run -it jinbumjin/cti-lense:artifact /bin/bash
+$ sudo Docker pull jinbumjin/cti-lense:latest
+$ sudo Docker run -it jinbumjin/cti-lense:latest /bin/bash
 ```
 
 ### 2. How to run
@@ -199,17 +199,17 @@ First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' a
 $ ls
 CTI_Lense   Dockerfile
 
-$ sudo Docker build -t ctilense:1.0 .
-$ sudo Docker run -it ctilense:1.0 /bin/bash
+$ sudo docker build -t ctilense:1.0 .
+$ sudo docker run -it ctilense:1.0 /bin/bash
 /CTI_Lense# service mongodb start
 ```
 
 Second, you must follow the **Manual environment setting** [step](#step2). This involves downloading the datasets and importing them into MongoDB, except the installation of dependencies (apt-get and pip). Afterwards, commit the new container image to the host.
 
 ```
-$ sudo Docker ps
+$ sudo docker ps
 CONTAINER ID   IMAGE		...
 ed4094713497   ctilense:1.0	...
 
-$ sudo Docker commit ed4094713497 ctilense:1.1
+$ sudo docker commit ed4094713497 ctilense:1.1
 ```
