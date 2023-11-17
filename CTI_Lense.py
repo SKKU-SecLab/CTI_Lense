@@ -38,15 +38,15 @@ elif etype == "quality":
     # If the type is quality, print the analysis type, create a Quality object, and perform quality analyses
     print("Quality")
     quality = Quality.Quality()
-    quality.fig4_correctness()
+    quality.fig5_correctness()
     print("")
-    quality.fig7_completeness()
+    quality.fig8_completeness()
     print("")
-    quality.table4_scanning_result()
+    quality.table7_scanning_result()
     print("")
-    quality.table5_correctly_mapped()
+    quality.table4_correctly_mapped()
     print("")
-    quality.fig5_accuracy_vtt()
+    quality.fig6_accuracy_vtt()
 
 else:
     # If no specific type is specified, show results for all analysis types
