@@ -11,7 +11,7 @@ In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2
 
 # How to use
 There are two ways to replicate our analysis result:
-- [Step 1](#step1). **(Recommended)** Simply use our docker image and run.
+- [Step 1](#step1). **(Recommended)** Simply use our docker image and run (How to get the results and figures are explained [here](#results) )
 - [Step 2](#step2). **(Optional)** Set the analysis environment manually from scratch.
 - [Optinal step](#optional). **(Optional)** This step is provided in case you are curious about how we built the docker image.
 
@@ -119,7 +119,7 @@ After you unzip the datasets to the right place of folders, you can import the S
 ```
 (venv3) python ImportData.py
 ```
-### How to run
+### 4. How to run
 #### Collecting STIX data and storing data to MondoDB
 We recommend you to download the STIX dataset from the drive URL link, however, you can collect the dataset by executing the `.py` code in `CTICollecter` folder and save the dataset to the database by executing the ` SaveData_from_File.py`. The sample execution command is as follows.
 ```
@@ -134,7 +134,8 @@ optional arguments:
 (venv3) python Collection/TAXIIv1.py -s 2023-01-01 -e 2023-01-03 -o data/STIX1
 (venv3) python SaveData_from_File.py -ov1 data/STIX1/
 ```
-### STIX data analysis results
+<a name="result"></a>
+### 5. STIX data analysis results
 You can check the brief analysis for Volume, Timeliness, Diversity, and Quality by executing the `CTI_Lense.py` file. You can get individual results for Volume, Timeliness, Diversity, and Quality with the `-e` parameter. The sample usage and result are as follows.
 ```
 (venv3) python CTI_Lense.py --help
@@ -189,11 +190,12 @@ sighting               1,273   0.05%   11/22  50.00%
 ...
 ```
 
-### Results and R script for the Figures
+<a name="result2"></a>
+### 6. Results and R script for the Figures
 We share the results and R script that we used to draw the figures in our paper in `PaperFig-R/PaperFigs.ipynb`.
 
 <a name="optional"></a>
-## How we built the docker image (Optional)
+## (Optional step) How we built the docker image
 (This part is strictly optional, only follow below steps if you want to build the docker image yourself.)
 First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' as shown below. Then, build and run the Docker image, and enable the MongoDB service within the Docker container.
 
@@ -206,7 +208,7 @@ $ sudo docker run -it ctilense:1.0 /bin/bash
 /CTI_Lense# service mongodb start
 ```
 
-Second, you must follow the **Manual environment setting** [step](#manual_setting). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
+Second, you must follow the **Manual environment setting** [step](#step2). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
 
 ```
 $ sudo docker ps
