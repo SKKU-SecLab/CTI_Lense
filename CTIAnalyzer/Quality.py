@@ -30,9 +30,9 @@ class Quality:
         self.aptdb = conn["APT_IOC"]
 
     # Method to generate Figure 4 - Proportion of correct and incorrect attribute values
-    def fig4_correctness(self):
-        print ("* Figure 4 - Proportion of correct and incorrect attribute values")
-        print ("  - The numerical values for Figure 4")
+    def fig5_correctness(self):
+        print ("* Figure 5 - Proportion of correct and incorrect attribute values")
+        print ("  - The numerical values for Figure 5")
 
         # Run the validation tests for STIX 1 and STIX 2
         stix1 = validtest.run()
@@ -62,7 +62,7 @@ class Quality:
         print ("="*52)
 
     # Method to generate Table IV - Statistics of Indicator objects in the STIX dataset based on observable types and scanning reports
-    def table4_scanning_result(self):
+    def table7_scanning_result(self):
         # Define data counts for different observable types
         stixdata = {"IPdata":43537,"Domaindata":163121,"Filedata":88470,"URIdata":377857}
         cols = ["IPdata","Domaindata","Filedata","URIdata"]
@@ -137,7 +137,7 @@ class Quality:
             res[col] += ["{:.2%}".format(pmal),"{:.2%}".format(pundet),"{:.2%}".format(n_a)]
         
 
-        print ("* Table IV - Statistics of Indicator objects in the STIX dataset based on observable types and corresponding scanning reports for each commercial scanning service.")
+        print ("* Table VII - Statistics of Indicator objects in the STIX dataset based on observable types and corresponding scanning reports for each commercial scanning service.")
         print ("="*128)
         print ("{:28} | {:^30} | {:^30} | {:^30}".format("","VirusTotal","HybridAnalysis","MetaDefender"))
         print("-"*128)
@@ -148,7 +148,7 @@ class Quality:
         print("="*128)
 
     # Method to generate Figure 5 - Accuracy for observable types based on each threshold
-    def fig5_accuracy_vtt(self):
+    def fig6_accuracy_vtt(self):
         # Define observable types (columns) for analysis
         cols = ["IPdata","Domaindata","Filedata","URIdata"]
         res = {"IPdata":[],"Domaindata":[],"Filedata":[],"URIdata":[]}
@@ -172,7 +172,7 @@ class Quality:
                 res[col].append("{:.6f}".format(mal/_len))
 
         # Print the results in a formatted table
-        print ("* Figure 5 - Accuracy for observable types based on each threshold t.")
+        print ("* Figure 6 - Accuracy for observable types based on each threshold t.")
         print ("="*52) 
         print ("{:10}{:>10}{:>12}{:>10}{:>10}".format(*list(["Threshold"]+list(res.keys()))))
         print ("-"*52) 
@@ -181,7 +181,7 @@ class Quality:
         print ("="*52)
 
 
-    def table5_correctly_mapped(self):
+    def table4_correctly_mapped(self):
         mapping = {"hash":"FileObjectType","ip":"AddressObjectType",
                     "domain":"DomainNameObjectType","uri":"URIObjectType"}
 
@@ -190,7 +190,7 @@ class Quality:
         obsta = json.loads(open(path+"/data/STIXv1_IOC_TA_Map.json").read())
         obsttp = json.loads(open(path+"/data/STIXv1_IOC_TTP_Map.json").read())
 
-        print ("* Table V - Correctly mapped STIX objects with APT reports.")
+        print ("* Table IV - Correctly mapped STIX objects with APT reports.")
         print ("="*60)
         print ("{:20}{:15}{:>8}{:>17}".format("Indicator attr.", "Ref. object", "Overlap",  "# (%) Correct"))
         print ("-"*60)
@@ -311,8 +311,8 @@ class Quality:
         print ("="*60)
 
     # Method to generate Figure 7 - Completeness of information in different STIX versions
-    def fig7_completeness(self):
-        print ("* Figure 7 - Number of indicator objects where information is written in the Description attribute and the precise object/attribute for four information types: Attack pattern (AP), Malware instance (MI), Threat actor (TA), and Target information (TI)")
+    def fig8_completeness(self):
+        print ("* Figure 8 - Number of indicator objects where information is written in the Description attribute and the precise object/attribute for four information types: Attack pattern (AP), Malware instance (MI), Threat actor (TA), and Target information (TI)")
         print ("="*60)
         print ("{:<14}{:<20}{:>13}{:>13}".format("STIX version","Information type", "Description", "Object/Attr"))
         print ("-"*60)
