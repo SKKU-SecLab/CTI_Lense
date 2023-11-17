@@ -9,29 +9,6 @@ Welcome to the GitHub-repository for CTI-Lense. This repository hosts the artifa
 Sharing cyber threat intelligence: Does it really help? <br>
 In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2024.
 
-# How we built the docker image (Optional)
-(This part is strictly optional, only follow below steps if you want to build the docker image yourself.)
-First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' as shown below. Then, build and run the Docker image, and enable the MongoDB service within the Docker container.
-
-```
-$ ls
-CTI_Lense   Dockerfile
-
-$ sudo docker build -t ctilense:1.0 .
-$ sudo docker run -it ctilense:1.0 /bin/bash
-/CTI_Lense# service mongodb start
-```
-
-Second, you must follow the **Manual environment setting** [step](#manual_setting). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
-
-```
-$ sudo docker ps
-CONTAINER ID   IMAGE		...
-ed4094713497   ctilense:1.0	...
-
-$ sudo docker commit ed4094713497 ctilense:1.1
-```
-
 # How to use (Recommended)
 The step is recommended if you want to replicate our analysis result without having to set the analysis environment manually.
 
@@ -205,3 +182,26 @@ sighting               1,273   0.05%   11/22  50.00%
 
 ## Results and R script for the Figures
 We share the results and R script that we used to draw the figures in our paper in `PaperFig-R/PaperFigs.ipynb`.
+
+# How we built the docker image (Optional)
+(This part is strictly optional, only follow below steps if you want to build the docker image yourself.)
+First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' as shown below. Then, build and run the Docker image, and enable the MongoDB service within the Docker container.
+
+```
+$ ls
+CTI_Lense   Dockerfile
+
+$ sudo docker build -t ctilense:1.0 .
+$ sudo docker run -it ctilense:1.0 /bin/bash
+/CTI_Lense# service mongodb start
+```
+
+Second, you must follow the **Manual environment setting** [step](#manual_setting). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
+
+```
+$ sudo docker ps
+CONTAINER ID   IMAGE		...
+ed4094713497   ctilense:1.0	...
+
+$ sudo docker commit ed4094713497 ctilense:1.1
+```
