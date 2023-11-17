@@ -21,7 +21,7 @@ $ sudo docker run -it ctilense:1.0 /bin/bash
 /CTI_Lense# service mongodb start
 ```
 
-Second, you must follow the **Manual environment setting** [steps](#manual_setting). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
+Second, you must follow the **Manual environment setting** [step](#manual_setting). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
 
 ```
 $ sudo docker ps
