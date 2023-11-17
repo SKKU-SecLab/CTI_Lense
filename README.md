@@ -1,11 +1,10 @@
 # CTI_Lense - NDSS 2024 Artifact
 
-This research artifact is aimed to provide the source code of CTI-Lense, a framework that collates STIX data from a set of open CTI sources and systematically analyzes the collected data, as well as the dataset of various CTI sources.
+Welcome to the GitHub-repository for CTI-Lense. This repository hosts the artifacts for CTI-Lense, a framework dedicated to cyber threat intelligence (CTI) analysis. Here's what you will find in this repository:
 
-We shares parts of the code for evaluating Volume, Timeliness, Diversity, and Quality, and all STIX dataset we collected.
-
-The design and evaluation of CTI-Lense is detailed in our [NDSS 2024 paper](https://seclab.skku.edu/wp-content/uploads/2023/11/SharingCTI.pdf) (preprint version without author information).
-
+- Source Code: Get the CTI-Lense framework's source code, designed for efficient collection and processing of STIX data from various open CTI sources. The code for recreating our research results are also included.
+- STIX Dataset: Access our extensive dataset of STIX data we used for our analysis.
+- Research paper: The design and evaluation of CTI-Lense is detailed in our [NDSS 2024 paper](https://seclab.skku.edu/wp-content/uploads/2023/11/SharingCTI.pdf) (preprint version without author information).
 > Beomjin Jin, Eunsoo Kim, Hyunwoo Lee, Elisa Bertino, Doowon Kim, and Hyoungshick Kim. <br>
 Sharing cyber threat intelligence: Does it really help? <br>
 In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2024.
