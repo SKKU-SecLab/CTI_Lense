@@ -9,7 +9,6 @@ Welcome to the GitHub-repository for CTI-Lense. This repository hosts the artifa
 Sharing cyber threat intelligence: Does it really help? <br>
 In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2024.
 
-<a name="step1"></a>
 # How we built the docker image
 First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' as shown below. Then, build and run the Docker image, and enable the MongoDB service within the Docker container.
 
@@ -22,7 +21,7 @@ $ sudo docker run -it ctilense:1.0 /bin/bash
 /CTI_Lense# service mongodb start
 ```
 
-Second, you must follow the **Manual environment setting** steps[Go to Step 1](#step1). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
+Second, you must follow the **Manual environment setting** [steps](#manual_setting). This involves downloading the datasets and importing them into MongoDB, except the installation of depedencies (apt-get and pip). Afterwards, commit the new container image to the host.
 
 ```
 $ sudo docker ps
@@ -55,6 +54,7 @@ Then, to get our experimental results, simply run CTI_Lense.py code with the fol
 /CTI_Lense# python3 CTI_Lense.py -e quality
 ```
 
+<a name="manual_setting"></a>
 ## Manual environment setting
 
 ### Environment
