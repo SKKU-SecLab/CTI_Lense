@@ -55,7 +55,7 @@ You can download the following data from the drive pages:
 * IOC dataset from APT reports: APT_IOC.zip
 * Scanning reports dataset from VirusTotal, HybridAnalysis, and MetaDefender: ScanningReport.zip
 
-[Dataset repository](dx.doi.org/10.6084/m9.figshare.24126336)
+[Dataset repository link](https://dx.doi.org/10.6084/m9.figshare.24126336)
 
 ### 3. Installation and environment setting
 First, install the MongoDB.
