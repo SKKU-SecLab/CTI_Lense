@@ -23,8 +23,8 @@ The step is recommended if you want to replicate our analysis result without hav
 
 ```
 $ sudo apt-get install Docker.io
-$ sudo Docker pull jinbumjin/cti-lense:latest
-$ sudo Docker run -it jinbumjin/cti-lense:latest /bin/bash
+$ sudo Docker pull jinbumjin/cti-lense:artifactv1.1
+$ sudo Docker run -it jinbumjin/cti-lense:artifactv1.1 /bin/bash
 ```
 
 ### 2. How to run
