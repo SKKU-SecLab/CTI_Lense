@@ -11,9 +11,9 @@ In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2
 
 # How to use
 There are two ways to replicate our analysis result:
-- [A](#step1). **(Recommended)** Simply use our Docker image and run (How to get the results and figures are explained [here](#results).)
-- [B](#step2). **(Optional)** Set the analysis environment manually from scratch.
-- [Optional step](#optional). **(Optional)** This step is provided in case you are curious about how we built the Docker image.
+- [A](#step1) **(Recommended)**: Simply use our Docker image and run (How to get the results and figures are explained [here](#results).)
+- [B](#step2) **(Optional)**: Set the analysis environment manually from scratch.
+- [Optional step](#optional) **(Optional)**: This step is provided in case you are curious about how we built the Docker image.
 
 <a name="step1"></a>
 ## A. Directly using our Docker image (Recommended)
