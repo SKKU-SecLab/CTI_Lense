@@ -11,12 +11,12 @@ In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2
 
 # How to use
 There are two ways to replicate our analysis result:
-- [Step 1](#step1). **(Recommended)** Simply use our Docker image and run (How to get the results and figures are explained [here](#results).)
-- [Step 2](#step2). **(Optional)** Set the analysis environment manually from scratch.
+- [A](#step1). **(Recommended)** Simply use our Docker image and run (How to get the results and figures are explained [here](#results).)
+- [B](#step2). **(Optional)** Set the analysis environment manually from scratch.
 - [Optional step](#optional). **(Optional)** This step is provided in case you are curious about how we built the Docker image.
 
 <a name="step1"></a>
-## Step 1. Directly using our Docker image (Recommended)
+## A. Directly using our Docker image (Recommended)
 The step is recommended if you want to replicate our analysis result without having to set the analysis environment manually.
 
 ### 1. Pull the Docker image
@@ -43,7 +43,7 @@ Then, to get our experimental results, simply run CTI_Lense.py code with the fol
 If you wish to know more about how we built the Docker image, you can follow descriptions in the [Optinal step](#optional)
 
 <a name="step2"></a>
-## Step 2. Manual environment setting (Optional)
+## B. Manual environment setting (Optional)
 This is part is optional. Only follow below steps in case you want to **recreate the analysis environment from scratch.**
 
 ### 1. Environment
