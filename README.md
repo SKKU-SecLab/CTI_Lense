@@ -20,7 +20,7 @@ $ sudo docker pull jinbumjin/cti-lenseps:artifact
 $ sudo docker run -it jinbumjin/cti-lense:artifact /bin/bash
 ```
 
-## How to run (Recommended)
+## How to run
 First, start the MongoDB service in the docker container. It takes up to 10 minutes to enable the MongoDB service. 
 ```
 /CTI_Lense# service mongodb start
