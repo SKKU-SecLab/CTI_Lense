@@ -9,10 +9,17 @@ Welcome to the GitHub-repository for CTI-Lense. This repository hosts the artifa
 Sharing cyber threat intelligence: Does it really help? <br>
 In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2024.
 
-# How to use (Recommended)
+# How to use
+There are two ways to replicate our analysis result:
+- [Step 1](#step1). **(Recommended)** Simply use our docker image and run.
+- [Step 2](#step2). **(Optional)** Set the analysis environment manually from scratch.
+- [Optinal step](#optional). **(Optional)** This step is provided in case you are curious about how we built the docker image.
+
+<a name="step1"></a>
+## Step 1. Directly using our docker image (Recommended)
 The step is recommended if you want to replicate our analysis result without having to set the analysis environment manually.
 
-## Directly use our docker image 
+### 1. Pull the docker image
 
 ```
 $ sudo apt-get install docker.io
@@ -20,7 +27,7 @@ $ sudo docker pull jinbumjin/cti-lenseps:artifact
 $ sudo docker run -it jinbumjin/cti-lense:artifact /bin/bash
 ```
 
-## How to run
+### 2. How to run
 First, start the MongoDB service in the docker container. It takes up to 10 minutes to enable the MongoDB service. 
 ```
 /CTI_Lense# service mongodb start
@@ -33,14 +40,16 @@ Then, to get our experimental results, simply run CTI_Lense.py code with the fol
 /CTI_Lense# python3 CTI_Lense.py -e quality
 ```
 
-<a name="manual_setting"></a>
-## Manual environment setting (Optional)
+If you wish to know more about how we built the docker image, you can follow descriptions in the [Optinal step](#optional)
+
+<a name="step2"></a>
+## Step 2. Manual environment setting (Optional)
 This is part is optional. Only follow below steps in case you want to **recreate the analysis environment from scratch.**
 
-### Environment
+### 1. Environment
 We tested with Ubuntu 18.04 and Python 3.6.
 
-### Download
+### 2. Dataset download
 You can download the following data from the drive pages:
 * STIX dataset: STIX1.zip and STIX2.zip 
 * IOC dataset from APT reports: APT_IOC.zip
@@ -52,7 +61,7 @@ or
 
 https://figshare.com/articles/dataset/STIX_dataset/24126336
 
-### Installation and environment setting
+### 3. Installation and environment setting
 First, install the MongoDB.
 ```
 $ sudo apt-get install mongodb
@@ -110,8 +119,8 @@ After you unzip the datasets to the right place of folders, you can import the S
 ```
 (venv3) python ImportData.py
 ```
-## How to run
-### Collecting STIX data and storing data to MondoDB
+### How to run
+#### Collecting STIX data and storing data to MondoDB
 We recommend you to download the STIX dataset from the drive URL link, however, you can collect the dataset by executing the `.py` code in `CTICollecter` folder and save the dataset to the database by executing the ` SaveData_from_File.py`. The sample execution command is as follows.
 ```
 usage: TAXIIv1.py [-h] -s STIME -e ETIME -o OPATH
@@ -125,7 +134,7 @@ optional arguments:
 (venv3) python Collection/TAXIIv1.py -s 2023-01-01 -e 2023-01-03 -o data/STIX1
 (venv3) python SaveData_from_File.py -ov1 data/STIX1/
 ```
-## STIX data analysis results
+### STIX data analysis results
 You can check the brief analysis for Volume, Timeliness, Diversity, and Quality by executing the `CTI_Lense.py` file. You can get individual results for Volume, Timeliness, Diversity, and Quality with the `-e` parameter. The sample usage and result are as follows.
 ```
 (venv3) python CTI_Lense.py --help
@@ -180,10 +189,11 @@ sighting               1,273   0.05%   11/22  50.00%
 ...
 ```
 
-## Results and R script for the Figures
+### Results and R script for the Figures
 We share the results and R script that we used to draw the figures in our paper in `PaperFig-R/PaperFigs.ipynb`.
 
-# How we built the docker image (Optional)
+<a name="optional"></a>
+## How we built the docker image (Optional)
 (This part is strictly optional, only follow below steps if you want to build the docker image yourself.)
 First, download the code and place the 'CTI_Lense' folder and the 'Dockerfile' as shown below. Then, build and run the Docker image, and enable the MongoDB service within the Docker container.
 
