@@ -4,7 +4,7 @@ Welcome to the GitHub-repository for CTI-Lense. This repository hosts the artifa
 
 - **STIX Dataset:** Access our extensive dataset of STIX data we used for our analysis.
 - **Source Code & Docker image:** Get the CTI-Lense framework's source code and Docker image for collecting and processing of STIX data from various open CTI sources. The code for replicating our research results (**Volume**, **Timeliness**, and **Quality**) are also included.
-- **Research paper:** Take a look at the design and evaluation results of CTI-Lense, which are detailed in our [NDSS 2024 paper](https://seclab.skku.edu/wp-content/uploads/2023/11/SharingCTI.pdf) (preprint version without author information). The authors and their affiliation information are as follows.
+- **Research paper:** Take a look at the design and evaluation results of CTI-Lense, which are detailed in our [NDSS 2024 paper](https://www.ndss-symposium.org/wp-content/uploads/2024-228-paper.pdf). The authors and their affiliation information are as follows.
 > Beomjin Jin, Eunsoo Kim, Hyunwoo Lee, Elisa Bertino, Doowon Kim, and Hyoungshick Kim. <br>
 Sharing cyber threat intelligence: Does it really help? <br>
 In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2024.
