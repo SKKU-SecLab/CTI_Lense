@@ -8,6 +8,12 @@ Welcome to the GitHub-repository for CTI-Lense. This repository hosts the artifa
 > Beomjin Jin, Eunsoo Kim, Hyunwoo Lee, Elisa Bertino, Doowon Kim, and Hyoungshick Kim. <br>
 Sharing cyber threat intelligence: Does it really help? <br>
 In Proceedings of the Network and Distributed System Security (NDSS) Symposium 2024.
+> @inproceedings{jin2024sharingcti, <br>
+  title={Sharing cyber threat intelligence: Does it really help?}, <br>
+  author={Jin, Beomjin and Kim, Eunsoo and Lee, Hyunwoo and Bertino, Elisa and Kim, Doowon and Kim, Hyoungshick}, <br>
+  booktitle={Proceedings of the 30th Network and Distributed System Security (NDSS) Symposium}, <br>
+  year={2024} <br>
+}
 
 # How to use
 There are two ways to replicate our analysis result:
